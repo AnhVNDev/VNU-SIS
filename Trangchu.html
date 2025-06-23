@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang chủ</title>
+    <link rel="icon" type="image/png" href="/img/VNU-SIS-logo.png" />
+    <!-- CSS Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- ICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid body-content">
+      <!-- Headers -->
+      <div class="position-sticky top-0 z-10">
+        <header class="uni-header">
+          <!-- Left: Logo + School Info -->
+          <div class="uni-header-left">
+            <!-- Logo: SVG SIS -->
+            <div class="uni-logo">
+              <img src="./img/VNU-SIS-logo.png" alt="Logo SIS" />
+            </div>
+            <div class="uni-title">
+              <div class="uni-main">ĐẠI HỌC QUỐC GIA HÀ NỘI</div>
+              <div class="uni-main">
+                TRƯỜNG KHOA HỌC LIÊN NGÀNH VÀ NGHỆ THUẬT
+              </div>
+              <div class="uni-sub">VIETNAM NATIONAL UNIVERSITY, HANOI</div>
+              <div class="uni-sub">
+                SCHOOL OF INTERDISCIPLINARY SCIENCES AND ARTS
+              </div>
+            </div>
+          </div>
+          <!-- Right: Flags + Nav + Search -->
+          <div class="uni-header-right">
+            <nav class="uni-nav">
+              <a href="#" class="uni-nav-item active">VNU</a>
+              <a href="#" class="uni-nav-item">THƯ VIỆN SỐ</a>
+              <a href="#" class="uni-nav-item">LIÊN HỆ</a>
+            </nav>
+            <div class="uni-lang-and-search">
+              <div class="uni-lang-flags">
+                <img src="https://flagcdn.com/w20/vn.png" alt="VN" />
+                <img src="https://flagcdn.com/w20/gb.png" alt="EN" />
+                <img src="https://flagcdn.com/w20/cn.png" alt="CN" />
+              </div>
+              <div class="uni-search">
+                <span class="uni-search-icon">
+                  <svg height="20" width="20" viewBox="0 0 24 24">
+                    <circle
+                      cx="11"
+                      cy="11"
+                      r="8"
+                      stroke="#003366"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                    <line
+                      x1="16"
+                      y1="16"
+                      x2="22"
+                      y2="22"
+                      stroke="#003366"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </span>
+                <input type="text" placeholder="Tìm kiếm…" />
+              </div>
+            </div>
+          </div>
+        </header>
+        <!-- nav-bar -->
+        <nav class="navbar navbar-expand-lg sis-navbar py-0">
+          <div class="container-fluid px-0">
+            <button
+              class="navbar-toggler ms-2"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#sisNav"
+              aria-controls="sisNav"
+              aria-expanded="false"
+              aria-label="Menu"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="sisNav">
+              <ul class="navbar-nav w-100 justify-content-between">
+                <!-- Menu 1 -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Giới thiệu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Tuyển sinh</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Đào tạo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Khoa học công nghệ</a>
+                </li>
+                <!-- Menu có submenu -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Hợp tác & phát triển</a
+                  >
+                  <!-- Submenu -->
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Văn bản, biểu mẫu hợp tác, phát triển</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Thông tin hợp tác và phát triển</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Đối tác quốc tế</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Đối tác trong nước</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Đảm bảo chất lượng</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Người học SIS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Cựu người học SIS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Tin tức</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <section class="content-page">
+        <!-- GIỚI THIỆU -->
+        <section class="p-0 position-relative">
+          <div class="container-fluid">
+            <div class="row">
+              <div
+                class="quick-content-wrap col-lg-8 col-12 mb-4 mb-lg-0 h-500 text-white"
+                style="
+                  background-image: url('img/bg.jpg');
+                  background-size: cover;
+                  background-position: center;
+                "
+              >
+                <h2 class="display-5 fw-bold">
+                  TRƯỜNG KHOA HỌC LIÊN NGÀNH VÀ NGHỆ THUẬT
+                </h2>
+                <div class="lead-text bold-500">
+                  <div class="lead-sub-text">Tinh thần khai phóng</div>
+                  <div class="lead-sub-text">Tư duy liên ngành</div>
+                  <div class="lead-sub-text">Tầm nhìn toàn cầu</div>
+                </div>
+                <button
+                  class="btn custom-btn d-flex align-items-center px-3 py-2 bg-primary-btn"
+                >
+                  <span
+                    class="flex-grow-1 text-start"
+                    style="color: #f4af22; font-weight: 500"
+                  >
+                    Thông điệp của Hiệu trưởng
+                  </span>
+                  <span
+                    class="icon-bg d-flex align-items-center justify-content-center ms-2 btn-content-icon"
+                  >
+                    <svg width="32" height="24" viewBox="0 0 32 24" fill="none">
+                      <polygon points="0,0 16,12 0,24" fill="#f4af22" />
+                      <polygon points="16,0 32,12 16,24" fill="#f4af22" />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <!-- Right: Image + Info -->
+              <div
+                class="col-lg-4 col-12 d-flex flex-column align-items-lg-center align-items-center bg-soft py-4 res-more-wrap"
+              >
+                <ul class="list-unstyled w-100">
+                  <li class="w-100">
+                    <div class="d-flex align-items-center gap-2 p-1">
+                      <span class="icon-square">
+                        <i class="fa-regular fa-circle-check"></i>
+                      </span>
+                      <span class="one-line-ellipsis">
+                        Đề án tuyển sinh ĐHCQ 2025 – Đây là một ví dụ về một
+                        tiêu đề rất dài để kiểm tra dấu ba chấm ...
+                      </span>
+                    </div>
+                  </li>
+                  <li class="w-100">
+                    <div class="d-flex align-items-center gap-2 p-1">
+                      <span class="icon-square">
+                        <i class="fa-regular fa-circle-check"></i>
+                      </span>
+                      <span class="one-line-ellipsis">
+                        Các bậc đào tạo của Trường
+                      </span>
+                    </div>
+                  </li>
+                  <li class="w-100">
+                    <div class="d-flex align-items-center gap-2 p-1">
+                      <span class="icon-square">
+                        <i class="fa-regular fa-circle-check"></i>
+                      </span>
+                      <span class="one-line-ellipsis"> Đội ngũ VNU-SIS </span>
+                    </div>
+                  </li>
+                </ul>
+
+                <div
+                  class="position-relative d-flex justify-content-center align-items-center w-100"
+                  style="min-height: 360px"
+                >
+                  <div
+                    class="d-flex flex-wrap custom-4box-grid"
+                    style="gap: 32px; width: 480px; justify-content: center"
+                  >
+                    <div
+                      class="grid-box border-green rounded-top-left position-relative"
+                    >
+                      KHOA CÔNG NGHIỆP VĂN HÓA VÀ DI SẢN
+                      <div
+                        class="quarter-circle top-left quarter-circle-green"
+                      ></div>
+                    </div>
+                    <div
+                      class="grid-box border-pink rounded-top-right position-relative"
+                    >
+                      KHOA NGHỆ THUẬT VÀ THIẾT KẾ
+                      <div
+                        class="quarter-circle top-right quarter-circle-pink"
+                      ></div>
+                    </div>
+                    <div
+                      class="grid-box border-navy rounded-bottom-left position-relative"
+                    >
+                      KHOA QUẢN TRỊ VÀ KINH TẾ SÁNG TẠO
+                      <div
+                        class="quarter-circle bottom-left quarter-circle-navy"
+                      ></div>
+                    </div>
+                    <div
+                      class="grid-box border-orange rounded-bottom-right position-relative"
+                    >
+                      KHOA KIẾN TRÚC, ĐÔ THỊ VÀ KHOA HỌC BỀN VỮNG
+                      <div
+                        class="quarter-circle bottom-right quarter-circle-orange"
+                      ></div>
+                    </div>
+                  </div>
+                  <!-- Logo center -->
+                  <div class="center-logo shadow">
+                    <div class="uni-logo">
+                      <img src="./img/VNU-SIS-logo.png" alt="Logo SIS" />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="height: 60px"
+                  class="d-flex align-items-center px-2"
+                >
+                  <span
+                    class="fw-bold"
+                    style="
+                      color: #304a81;
+                      letter-spacing: 0.5px;
+                      font-size: 1.15rem;
+                    "
+                  >
+                    ĐƠN VỊ KHOA HỌC, TƯ VẤN VÀ DỊCH VỤ
+                  </span>
+                  <span class="ms-2 d-flex align-items-center">
+                    <svg width="28" height="20" viewBox="0 0 28 20">
+                      <rect
+                        y="2"
+                        width="20"
+                        height="3"
+                        rx="1.5"
+                        fill="#fa979c"
+                      />
+                      <rect
+                        y="8.5"
+                        width="20"
+                        height="3"
+                        rx="1.5"
+                        fill="#fa979c"
+                      />
+                      <rect
+                        y="15"
+                        width="20"
+                        height="3"
+                        rx="1.5"
+                        fill="#fa979c"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="bg-gradient-custom border rounded-1 py-2 px-2">
+                <div class="row g-0 text-center text-lg-start">
+                  <div
+                    class="d-flex align-items-center info-portal-col col-lg-3 col-6 mb-2 mb-lg-0"
+                  >
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/1792/1792879.png"
+                      class="info-portal-icon me-2"
+                      alt="Hành chính"
+                    />
+                    <a href="#" class="info-portal-link">
+                      CỔNG THÔNG TIN HÀNH CHÍNH
+                    </a>
+                  </div>
+                  <div
+                    class="d-flex align-items-center info-portal-col col-lg-3 col-6 mb-2 mb-lg-0"
+                  >
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/3767/3767084.png"
+                      class="info-portal-icon me-2"
+                      alt="Tuyển sinh"
+                    />
+                    <a href="#" class="info-portal-link">
+                      CỔNG THÔNG TIN TUYỂN SINH
+                    </a>
+                  </div>
+                  <div
+                    class="d-flex align-items-center info-portal-col col-lg-3 col-6"
+                  >
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png"
+                      class="info-portal-icon me-2"
+                      alt="Người học"
+                    />
+                    <a href="#" class="info-portal-link">
+                      CỔNG THÔNG TIN NGƯỜI HỌC
+                    </a>
+                  </div>
+                  <div
+                    class="d-flex align-items-center info-portal-col col-lg-3 col-6"
+                  >
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/992/992651.png"
+                      class="info-portal-icon me-2"
+                      alt="Cán bộ"
+                    />
+                    <a href="#" class="info-portal-link">
+                      CỔNG THÔNG TIN CÁN BỘ
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- TIN TỨC -->
+        <section class="p-0 position-relative bg-soft">
+          <div class="container-fluid">
+            <div class="row">
+              <div
+                class="quick-content-wrap-img col-lg-8 col-12 mb-1 mb-lg-0 h-500 text-white"
+              >
+                <a href="" class="card-img-link" target="_blank" rel="noopener">
+                  <div class="card-img-container">
+                    <img
+                      src="/img/bg.jpg"
+                      alt="Ảnh sự kiện SIS"
+                      class="card-img-main"
+                    />
+                  </div>
+                </a>
+                <div
+                  class="box-title-notify d-flex align-items-center gap-2 mt-2"
+                >
+                  <img
+                    src="img/icon-orange.png"
+                    alt="icon"
+                    class="icon-title-notify"
+                  />
+                  <div class="title-notify-wrap">
+                    <span class="notify-title-text">THÔNG BÁO MỚI</span>
+                    <div class="title-notify-underline">
+                      <span class="underline-dot"></span>
+                    </div>
+                  </div>
+                </div>
+                <ul class="list-unstyled w-100">
+                  <li class="w-100">
+                    <a class="text-decoration-none" href="">
+                      <div class="d-flex align-items-center gap-2 p-1">
+                        <span class="icon-square">
+                          <i class="fa-regular fa-circle-check"></i>
+                        </span>
+                        <span class="one-line-ellipsis">
+                          Danh sách thí sinh đủ điều kiện dự tuyển kỳ thi tuyển
+                          sinh sau đại học đợt 1 năm 2025*
+                        </span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="w-100">
+                    <a class="text-decoration-none" href="">
+                      <div class="d-flex align-items-center gap-2 p-1">
+                        <span class="icon-square">
+                          <i class="fa-regular fa-circle-check"></i>
+                        </span>
+                        <span class="one-line-ellipsis">
+                          Thông báo về việc gửi giấy chứng nhận kết quả thi năng
+                          khiếu*
+                        </span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="w-100">
+                    <a class="text-decoration-none" href="">
+                      <div class="d-flex align-items-center gap-2 p-1">
+                        <span class="icon-square">
+                          <i class="fa-regular fa-circle-check"></i>
+                        </span>
+                        <span class="one-line-ellipsis">
+                          Thông báo kết quả xét bổ nhiệm chức danh Phó giáo sư
+                          năm 2025*
+                        </span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Right: Image + Info -->
+              <div
+                class="col-lg-4 col-12 d-flex flex-column align-items-lg-center align-items-center bg-soft py-4 res-more-wrap"
+              >
+                <div
+                  class="box-title-notify d-flex align-items-center gap-2 mt-2 w-100"
+                >
+                  <img
+                    src="img/icon-orange.png"
+                    alt="icon"
+                    class="icon-title-notify"
+                  />
+                  <div class="title-notify-wrap">
+                    <span class="notify-title-text">TIN MỚI</span>
+                    <div class="title-notify-underline">
+                      <span class="underline-dot"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-short-list mt-3">
+                  <a href="" class="card-short-news-link mb-1">
+                    <div
+                      class="card-short-news row gx-3 gy-1 align-items-center"
+                    >
+                      <div class="col-5 col-md-4">
+                        <div class="short-news-img-wrap">
+                          <img
+                            src="/img/bg.jpg"
+                            alt="Hình minh hoạ"
+                            class="img-fluid short-news-img"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="col-7 col-md-8 d-flex flex-column justify-content-center"
+                      >
+                        <div class="short-news-title">
+                          Đảng bộ Trường KHLN&NT đoạt giải các cuộc thi cấp Đại
+                        </div>
+                        <div class="short-news-desc">
+                          Ngày 18/5/2025, tại Hội trường Nguyễn Văn Đạo, Đảng uỷ
+                          ĐHQGHN đã tổ chức Lễ tổng kết và trao
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="" class="card-short-news-link mb-1">
+                    <div
+                      class="card-short-news row gx-3 gy-1 align-items-center"
+                    >
+                      <div class="col-5 col-md-4">
+                        <div class="short-news-img-wrap">
+                          <img
+                            src="/img/bg.jpg"
+                            alt="Hình minh hoạ"
+                            class="img-fluid short-news-img"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="col-7 col-md-8 d-flex flex-column justify-content-center"
+                      >
+                        <div class="short-news-title">
+                          Đảng bộ Trường KHLN&NT đoạt giải các cuộc thi cấp Đại
+                        </div>
+                        <div class="short-news-desc">
+                          Ngày 18/5/2025, tại Hội trường Nguyễn Văn Đạo, Đảng uỷ
+                          ĐHQGHN đã tổ chức Lễ tổng kết và trao
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="" class="card-short-news-link mb-1">
+                    <div
+                      class="card-short-news row gx-3 gy-1 align-items-center"
+                    >
+                      <div class="col-5 col-md-4">
+                        <div class="short-news-img-wrap">
+                          <img
+                            src="/img/bg.jpg"
+                            alt="Hình minh hoạ"
+                            class="img-fluid short-news-img"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="col-7 col-md-8 d-flex flex-column justify-content-center"
+                      >
+                        <div class="short-news-title">
+                          Đảng bộ Trường KHLN&NT đoạt giải các cuộc thi cấp Đại
+                        </div>
+                        <div class="short-news-desc">
+                          Ngày 18/5/2025, tại Hội trường Nguyễn Văn Đạo, Đảng uỷ
+                          ĐHQGHN đã tổ chức Lễ tổng kết và trao
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="" class="card-short-news-link mb-1">
+                    <div
+                      class="card-short-news row gx-3 gy-1 align-items-center"
+                    >
+                      <div class="col-5 col-md-4">
+                        <div class="short-news-img-wrap">
+                          <img
+                            src="/img/bg.jpg"
+                            alt="Hình minh hoạ"
+                            class="img-fluid short-news-img"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="col-7 col-md-8 d-flex flex-column justify-content-center"
+                      >
+                        <div class="short-news-title">
+                          Đảng bộ Trường KHLN&NT đoạt giải các cuộc thi cấp Đại
+                        </div>
+                        <div class="short-news-desc">
+                          Ngày 18/5/2025, tại Hội trường Nguyễn Văn Đạo, Đảng uỷ
+                          ĐHQGHN đã tổ chức Lễ tổng kết và trao
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="" class="card-short-news-link mb-1">
+                    <div
+                      class="card-short-news row gx-3 gy-1 align-items-center"
+                    >
+                      <div class="col-5 col-md-4">
+                        <div class="short-news-img-wrap">
+                          <img
+                            src="/img/bg.jpg"
+                            alt="Hình minh hoạ"
+                            class="img-fluid short-news-img"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="col-7 col-md-8 d-flex flex-column justify-content-center"
+                      >
+                        <div class="short-news-title">
+                          Đảng bộ Trường KHLN&NT đoạt giải các cuộc thi cấp Đại
+                        </div>
+                        <div class="short-news-desc">
+                          Ngày 18/5/2025, tại Hội trường Nguyễn Văn Đạo, Đảng uỷ
+                          ĐHQGHN đã tổ chức Lễ tổng kết và trao
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- TUYỂN SINH -->
+        <section class="p-0 position-relative bg-soft">
+          <div
+            class="container-fluid p-4"
+            style="
+              background-image: url('img/bg.jpg');
+              background-size: cover;
+              background-position: center;
+            "
+          >
+            <div class="recruit-link-block text-center p-2">
+              <a class="text-decoration-none recruit-link" href=""
+                >Tuyển sinh</a
+              >
+            </div>
+            <div class="tab-filters-scroll-outer d-flex justify-content-center">
+              <div class="tab-filters-wrap">
+                <button class="tab-filter-btn active">Tất cả</button>
+                <button class="tab-filter-btn">Đề án tuyển sinh Đại học</button>
+                <button class="tab-filter-btn">
+                  Phương thức xét tuyển Đại học
+                </button>
+                <button class="tab-filter-btn">Hồ sơ Thạc sĩ</button>
+                <button class="tab-filter-btn">Đăng ký thi năng khiếu</button>
+                <button class="tab-filter-btn">Lịch tuyển sinh Thạc sĩ</button>
+              </div>
+            </div>
+            <div class="row p-4 padding-no">
+              <div class="col-lg-6 col-12">
+                <div class="program-header-box d-flex align-items-center w-100">
+                  <div class="icon-title-wrap d-flex align-items-center w-100">
+                    <img
+                      src="/img/icon-orange.png"
+                      alt="icon"
+                      class="program-header-icon"
+                    />
+                    <div class="program-header-title-wrap">
+                      <span class="program-header-title"
+                        >TÌM HIỂU CHƯƠNG TRÌNH ĐẠI HỌC</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-12">
+                <div class="program-header-box d-flex align-items-center w-100">
+                  <div class="icon-title-wrap d-flex align-items-center w-100">
+                    <img
+                      src="/img/icon-blue.png"
+                      alt="icon"
+                      class="program-header-icon"
+                    />
+                    <div
+                      class="program-header-title-wrap program-header-title-wrap-blue"
+                    >
+                      <span class="program-header-title"
+                        >TÌM HIỂU CHƯƠNG TRÌNH ĐẠI HỌC</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-1">
+              <div class="col-lg-6 col-12">
+                <div class="training-block gx-0 align-items-stretch mb-4">
+                  <!-- Label bên trái -->
+                  <div class="label-training-col d-flex">
+                    <div class="label-training w-100 d-flex flex-column">
+                      <div>LIÊN</div>
+
+                      <div>NGÀNH</div>
+                    </div>
+                  </div>
+                  <!-- Danh sách chương trình bên phải -->
+                  <div class="content-col w-100">
+                    <div
+                      class="block-content h-100 d-flex flex-column justify-content-center"
+                    >
+                      <a href="#" class="training-link">Quản trị thương hiệu</a>
+                      <a href="#" class="training-link"
+                        >Quản trị tài nguyên di sản</a
+                      >
+                      <a href="#" class="training-link"
+                        >Quản lý giải trí và sự kiện</a
+                      >
+                      <a href="#" class="training-link"
+                        >Quản trị đô thị thông minh và bền vững</a
+                      >
+                      <a href="#" class="training-link"
+                        >Công nghệ truyền thông</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-12">
+                <div
+                  class="program-block-ths gx-0 align-items-stretch mb-4 w-100"
+                >
+                  <!-- Danh sách chương trình bên trái -->
+                  <div class="program-ths-list-col d-flex align-items-center">
+                    <div class="program-ths-list w-100 text-end">
+                      <a href="#" class="program-ths-link">Di sản học</a>
+                      <a href="#" class="program-ths-link">Biến đổi khí hậu</a>
+                      <a href="#" class="program-ths-link">Khoa học bền vững</a>
+                      <a href="#" class="program-ths-link"
+                        >Quản lý phát triển đô thị</a
+                      >
+                      <a href="#" class="program-ths-link"
+                        >Công nghiệp văn hóa và sáng tạo</a
+                      >
+                    </div>
+                  </div>
+                  <!-- Label Thạc sĩ bên phải -->
+                  <div class="program-ths-label-col d-flex">
+                    <div class="program-ths-label w-100 d-flex flex-column">
+                      <div>THẠC</div>
+                      <div>SĨ</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-1">
+              <div class="col-lg-6 col-12">
+                <div class="training-block gx-0 align-items-stretch mb-4">
+                  <!-- Label bên trái -->
+                  <div class="label-training-col d-flex">
+                    <div class="label-training w-100 d-flex flex-column">
+                      <div>NGHỆ</div>
+
+                      <div>THUẬT</div>
+                    </div>
+                  </div>
+                  <!-- Danh sách chương trình bên phải -->
+                  <div class="content-col w-100">
+                    <div
+                      class="block-content h-100 d-flex flex-column justify-content-center"
+                    >
+                      <a href="#" class="training-link">Quản trị thương hiệu</a>
+                      <a href="#" class="training-link"
+                        >Quản trị tài nguyên di sản</a
+                      >
+                      <a href="#" class="training-link"
+                        >Quản lý giải trí và sự kiện</a
+                      >
+                      <a href="#" class="training-link"
+                        >Quản trị đô thị thông minh và bền vững</a
+                      >
+                      <a href="#" class="training-link"
+                        >Công nghệ truyền thông</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-12">
+                <div
+                  class="program-block-ths gx-0 align-items-stretch mb-4 w-100"
+                >
+                  <!-- Danh sách chương trình bên trái -->
+                  <div class="program-ths-list-col d-flex align-items-center">
+                    <div class="program-ths-list w-100 text-end">
+                      <a href="#" class="program-ths-link">Di sản học</a>
+                      <a href="#" class="program-ths-link">Biến đổi khí hậu</a>
+                      <a href="#" class="program-ths-link">Khoa học bền vững</a>
+                      <a href="#" class="program-ths-link"
+                        >Quản lý phát triển đô thị</a
+                      >
+                      <a href="#" class="program-ths-link"
+                        >Công nghiệp văn hóa và sáng tạo</a
+                      >
+                    </div>
+                  </div>
+                  <!-- Label Thạc sĩ bên phải -->
+                  <div class="program-ths-label-col d-flex">
+                    <div class="program-ths-label w-100 d-flex flex-column">
+                      <div>TIẾN</div>
+                      <div>SĨ</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SỰ KIỆN -->
+        <section class="p-0 position-relative bg-soft">
+          <div
+            class="container-fluid p-4"
+            style="
+              background-image: url('img/bg.jpg');
+              background-size: cover;
+              background-position: center;
+            "
+          >
+            <div class="recruit-link-block text-center p-2">
+              <a class="text-decoration-none recruit-link" href="">Sự kiện</a>
+            </div>
+            <div class="tab-filters-scroll-outer d-flex justify-content-center">
+              <div class="tab-filters-wrap">
+                <button class="tab-filter-btn active">Tất cả</button>
+                <button class="tab-filter-btn">Đề án tuyển sinh Đại học</button>
+                <button class="tab-filter-btn">
+                  Phương thức xét tuyển Đại học
+                </button>
+                <button class="tab-filter-btn">Hồ sơ Thạc sĩ</button>
+                <button class="tab-filter-btn">Đăng ký thi năng khiếu</button>
+                <button class="tab-filter-btn">Lịch tuyển sinh Thạc sĩ</button>
+              </div>
+            </div>
+            <div
+              id="eventCarousel"
+              class="carousel slide event-carousel eventCarousel-wrap"
+              data-bs-ride="carousel"
+              data-bs-interval="4000"
+              data-bs-pause="hover"
+            >
+              <div class="carousel-inner">
+                <!-- SLIDE 1 -->
+
+                <div class="carousel-item active">
+                  <div class="row gx-3">
+                    <!-- CARD 1 -->
+                    <div class="col-12 col-sm-6 col-lg-3 carousel-card-item">
+                      <div class="event-card">
+                        <img
+                          src="/img/bg.jpg"
+                          class="event-img"
+                          alt="Sự kiện 1"
+                        />
+                        <div class="event-body">
+                          <div
+                            class="event-header d-flex justify-content-between align-items-center"
+                          >
+                            <span class="event-date">02/06/2025</span>
+                            <button class="btn btn-register px-2 py-1">
+                              Đăng ký
+                            </button>
+                          </div>
+                          <div class="event-title">
+                            The Future of Marketing: Predictions for the Next 5
+                            Years
+                          </div>
+                          <div class="event-desc">
+                            Dự đoán xu hướng marketing và các công nghệ đột phá
+                            trong 5 năm tới...
+                          </div>
+                          <div class="event-category">
+                            <i class="fa-solid fa-tag"></i>
+                            NGHỆ THUẬT VÀ THIẾT KẾ
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- CARD 2 -->
+                    <div class="col-12 col-sm-6 col-lg-3 carousel-card-item">
+                      <div class="event-card">
+                        <img
+                          src="/img/bg.jpg"
+                          class="event-img"
+                          alt="Sự kiện 1"
+                        />
+                        <div class="event-body">
+                          <div
+                            class="event-header d-flex justify-content-between align-items-center"
+                          >
+                            <span class="event-date">02/06/2025</span>
+                            <button class="btn btn-register px-2 py-1">
+                              Đăng ký
+                            </button>
+                          </div>
+                          <div class="event-title">
+                            The Future of Marketing: Predictions for the Next 5
+                            Years
+                          </div>
+                          <div class="event-desc">
+                            Dự đoán xu hướng marketing và các công nghệ đột phá
+                            trong 5 năm tới...
+                          </div>
+                          <div class="event-category">
+                            <i class="fa-solid fa-tag"></i>
+                            NGHỆ THUẬT VÀ THIẾT KẾ
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- CARD 3 -->
+                    <div class="col-12 col-sm-6 col-lg-3 carousel-card-item">
+                      <div class="event-card">
+                        <img
+                          src="/img/bg.jpg"
+                          class="event-img"
+                          alt="Sự kiện 1"
+                        />
+                        <div class="event-body">
+                          <div
+                            class="event-header d-flex justify-content-between align-items-center"
+                          >
+                            <span class="event-date">02/06/2025</span>
+                            <button class="btn btn-register px-2 py-1">
+                              Đăng ký
+                            </button>
+                          </div>
+                          <div class="event-title">
+                            The Future of Marketing: Predictions for the Next 5
+                            Years
+                          </div>
+                          <div class="event-desc">
+                            Dự đoán xu hướng marketing và các công nghệ đột phá
+                            trong 5 năm tới...
+                          </div>
+                          <div class="event-category">
+                            <i class="fa-solid fa-tag"></i>
+                            NGHỆ THUẬT VÀ THIẾT KẾ
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- CARD 4 -->
+                    <div class="col-12 col-sm-6 col-lg-3 carousel-card-item">
+                      <div class="event-card">
+                        <img
+                          src="/img/bg.jpg"
+                          class="event-img"
+                          alt="Sự kiện 1"
+                        />
+                        <div class="event-body">
+                          <div
+                            class="event-header d-flex justify-content-between align-items-center"
+                          >
+                            <span class="event-date">02/06/2025</span>
+                            <button class="btn btn-register px-2 py-1">
+                              Đăng ký
+                            </button>
+                          </div>
+                          <div class="event-title">
+                            The Future of Marketing: Predictions for the Next 5
+                            Years
+                          </div>
+                          <div class="event-desc">
+                            Dự đoán xu hướng marketing và các công nghệ đột phá
+                            trong 5 năm tới...
+                          </div>
+                          <div class="event-category">
+                            <i class="fa-solid fa-tag"></i>
+                            NGHỆ THUẬT VÀ THIẾT KẾ
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- SLIDE 2 -->
+                <div class="carousel-item">
+                  <div class="row gx-3">
+                    <!-- CARD 5 -->
+                    <div class="col-12 col-sm-6 col-lg-3 carousel-card-item">
+                      <div class="event-card">
+                        <img
+                          src="/img/bg.jpg"
+                          class="event-img"
+                          alt="Sự kiện 1"
+                        />
+                        <div class="event-body">
+                          <div
+                            class="event-header d-flex justify-content-between align-items-center"
+                          >
+                            <span class="event-date">02/06/2025</span>
+                            <button class="btn btn-register px-2 py-1">
+                              Đăng ký
+                            </button>
+                          </div>
+                          <div class="event-title">
+                            The Future of Marketing: Predictions for the Next 5
+                            Years
+                          </div>
+                          <div class="event-desc">
+                            Dự đoán xu hướng marketing và các công nghệ đột phá
+                            trong 5 năm tới...
+                          </div>
+                          <div class="event-category">
+                            <i class="fa-solid fa-tag"></i>
+                            NGHỆ THUẬT VÀ THIẾT KẾ
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- DOTS -->
+              <div class="carousel-indicators custom-dots">
+                <button
+                  type="button"
+                  data-bs-target="#eventCarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#eventCarousel"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- HỢP TÁC -->
+        <section class="p-0 position-relative bg-soft">
+          <div
+            class="container-fluid p-4 partner-img-view"
+            style="
+              background-image: url('img/bg.jpg');
+              background-size: cover;
+              background-position: center;
+            "
+          >
+            <div class="recruit-link-block text-center p-2 bg-transparent">
+              <a
+                class="text-decoration-none recruit-link bg-transparent"
+                href=""
+                >Đào tạo liên ngành - Đồng hành cùng doanh nghiệp
+              </a>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- Footer -->
+      <footer
+        class="footer-sis"
+        style="
+          background-image: url('img/bg-f.jpg');
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div class="container-fluid py-3">
+          <div class="row">
+            <!-- Trái: Logo, thông tin, mạng xã hội -->
+            <div
+              class="col-lg-7 col-md-7 mb-3 mb-md-0 d-flex flex-column flex-md-row align-items-md-start align-items-center"
+            >
+              <!-- Logo -->
+              <img
+                src="/img/VNU-SIS-logo.png"
+                alt="SIS logo"
+                class="footer-sis-logo mb-2 mb-md-0 me-md-3"
+              />
+              <!-- Thông tin trường -->
+              <div class="footer-sis-info flex-grow-1">
+                <div
+                  class="footer-sis-text text-white mb-2"
+                  style="font-size: 0.97rem"
+                >
+                  <div>
+                    Bản quyền thuộc Trường Khoa học liên ngành và Nghệ thuật
+                  </div>
+                  <div>Giấy phép.</div>
+                  <div>
+                    Điện thoại: 0243 754 7716 | Hotline tuyển sinh: 098 129 0448
+                  </div>
+                  <div>
+                    Email: sis@vnu.edu.vn | truyenthongliennganh@vnu.edu.vn
+                  </div>
+                </div>
+                <!-- Social icons -->
+                <div class="footer-sis-social d-flex align-items-center gap-2">
+                  <a
+                    href="#"
+                    class="footer-social-icon facebook"
+                    title="Facebook"
+                    ><i class="fa-brands fa-square-facebook"></i
+                  ></a>
+                  <a href="#" class="footer-social-icon tiktok" title="TikTok"
+                    ><i class="fab fa-tiktok"></i
+                  ></a>
+                  <a href="#" class="footer-social-icon youtube" title="YouTube"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                  <a href="#" class="footer-social-icon zalo" title="Zalo">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg"
+                      alt="Zalo"
+                      style="
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 4px;
+                        background: #fff;
+                      "
+                    />
+                  </a>
+                  <span class="zalo-label ms-2">Official Account</span>
+                </div>
+              </div>
+            </div>
+            <!-- Phải: Danh sách giảng đường -->
+            <div
+              class="col-lg-5 col-md-5 d-flex flex-column justify-content-start align-items-md-end align-items-start"
+            >
+              <div
+                class="footer-sis-campus text-white"
+                style="font-size: 0.98rem"
+              >
+                <div>Giảng đường Xuân Thủy: Giảng đường Xuân Thủy</div>
+                <div>Giảng đường Hòa Lạc: Giảng đường Xuân Thủy</div>
+                <div>Giảng đường Mỹ Đình: Giảng đường Xuân Thủy</div>
+                <div>Giảng đường Nghĩa Đô: Giảng đường Xuân Thủy</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- JS Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      async
+    ></script>
+    <!-- JS -->
+    <script src="javacsript.js" async></script>
+  </body>
+</html>

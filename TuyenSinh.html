@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tuyển sinh</title>
+    <link rel="icon" type="image/png" href="/img/VNU-SIS-logo.png" />
+    <!-- CSS Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- ICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid body-content">
+      <!-- Headers -->
+      <div class="position-sticky top-0">
+        <header class="uni-header">
+          <!-- Left: Logo + School Info -->
+          <div class="uni-header-left">
+            <!-- Logo: SVG SIS -->
+            <div class="uni-logo">
+              <img src="./img/VNU-SIS-logo.png" alt="Logo SIS" />
+            </div>
+            <div class="uni-title">
+              <div class="uni-main">ĐẠI HỌC QUỐC GIA HÀ NỘI</div>
+              <div class="uni-main">
+                TRƯỜNG KHOA HỌC LIÊN NGÀNH VÀ NGHỆ THUẬT
+              </div>
+              <div class="uni-sub">VIETNAM NATIONAL UNIVERSITY, HANOI</div>
+              <div class="uni-sub">
+                SCHOOL OF INTERDISCIPLINARY SCIENCES AND ARTS
+              </div>
+            </div>
+          </div>
+          <!-- Right: Flags + Nav + Search -->
+          <div class="uni-header-right">
+            <nav class="uni-nav">
+              <a href="#" class="uni-nav-item active">VNU</a>
+              <a href="#" class="uni-nav-item">THƯ VIỆN SỐ</a>
+              <a href="#" class="uni-nav-item">LIÊN HỆ</a>
+            </nav>
+            <div class="uni-lang-and-search">
+              <div class="uni-lang-flags">
+                <img src="https://flagcdn.com/w20/vn.png" alt="VN" />
+                <img src="https://flagcdn.com/w20/gb.png" alt="EN" />
+                <img src="https://flagcdn.com/w20/cn.png" alt="CN" />
+              </div>
+              <div class="uni-search">
+                <span class="uni-search-icon">
+                  <svg height="20" width="20" viewBox="0 0 24 24">
+                    <circle
+                      cx="11"
+                      cy="11"
+                      r="8"
+                      stroke="#003366"
+                      stroke-width="2"
+                      fill="none"
+                    />
+                    <line
+                      x1="16"
+                      y1="16"
+                      x2="22"
+                      y2="22"
+                      stroke="#003366"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </span>
+                <input type="text" placeholder="Tìm kiếm…" />
+              </div>
+            </div>
+          </div>
+        </header>
+        <!-- nav-bar -->
+        <nav class="navbar navbar-expand-lg sis-navbar py-0">
+          <div class="container-fluid px-0">
+            <button
+              class="navbar-toggler ms-2"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#sisNav"
+              aria-controls="sisNav"
+              aria-expanded="false"
+              aria-label="Menu"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="sisNav">
+              <ul class="navbar-nav w-100 justify-content-between">
+                <!-- Menu 1 -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Giới thiệu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Tuyển sinh</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Đào tạo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Khoa học công nghệ</a>
+                </li>
+                <!-- Menu có submenu -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Hợp tác & phát triển</a
+                  >
+                  <!-- Submenu -->
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Văn bản, biểu mẫu hợp tác, phát triển</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Thông tin hợp tác và phát triển</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Đối tác quốc tế</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Đối tác trong nước</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Đảm bảo chất lượng</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Người học SIS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Cựu người học SIS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Tin tức</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <section class="content-page">
+        <!-- BREADSCRUMB -->
+        <div
+          class="breadcrumb-banner"
+          style="
+            background-image: url('img/bg.jpg');
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <div class="breadcrumb-content">
+            <nav class="breadcrumb" aria-label="breadcrumb">
+              <a href="/" class="breadcrumb-link">Trang chủ</a>
+              <span class="arrow"><i class="fa-solid fa-angle-right"></i></span>
+              <a href="/dao-tao" class="breadcrumb-link">Đào tạo</a>
+              <span class="arrow"><i class="fa-solid fa-angle-right"></i></span>
+              <span class="breadcrumb-current">Công tác sinh viên</span>
+            </nav>
+            <div class="breadcrumb-title">
+              Đào tạo
+              <div class="breadcrumb-underline"></div>
+            </div>
+          </div>
+        </div>
+        <section class="mt-2 px-2">
+          <div class="page-edu">
+            <div class="row">
+              <div class="col-lg-10 col-12">
+                <div class="w-100 h-100 d-flex">
+                  <div class="menu-tree-map mt-4 w-100">
+                    <div class="menu-tree-map-row menu-tree-map-row-1">
+                      <div class="menu-tree-map-item menu-tree-map-item-left">
+                        <div class="sis-circle"></div>
+                        <a href="">Văn bản, biểu mẫu</a>
+                      </div>
+                      <div class="menu-tree-map-item menu-tree-map-item-right">
+                        <a href="">Chương trìnhc</a>
+                        <div class="sis-circle"></div>
+                      </div>
+                    </div>
+                    <div class="menu-tree-map-row menu-tree-map-row-2">
+                      <div class="menu-tree-map-item menu-tree-map-item-left">
+                        <div class="sis-circle"></div>
+                        <a href="">Văn bản, biểu mẫu</a>
+                      </div>
+                      <div class="menu-tree-map-item menu-tree-map-item-right">
+                        <a href="">Chương trình đạo tạo đại học</a>
+                        <div class="sis-circle"></div>
+                      </div>
+                    </div>
+                    <div class="menu-tree-map-row menu-tree-map-row-3">
+                      <div class="menu-tree-map-item menu-tree-map-item-left">
+                        <div class="sis-circle"></div>
+                        <a href="">Văn bản, biểu mẫu</a>
+                      </div>
+                      <div class="menu-tree-map-item menu-tree-map-item-right">
+                        <a href="">Chương trình đạo tạo </a>
+                        <div class="sis-circle"></div>
+                      </div>
+                    </div>
+                    <div class="menu-tree-map-row menu-tree-map-row-4">
+                      <div class="menu-tree-map-item menu-tree-map-item-left">
+                        <div class="sis-circle"></div>
+                        <a href="">Văn bản, biểu mẫu</a>
+                      </div>
+                      <div class="menu-tree-map-item menu-tree-map-item-right">
+                        <a href="">Chương trình đạo tạo đại học</a>
+                        <div class="sis-circle"></div>
+                      </div>
+                    </div>
+                    <div class="menu-tree-map-row menu-tree-map-row-5">
+                      <div class="menu-tree-map-item menu-tree-map-item-left">
+                        <div class="sis-circle"></div>
+                        <a href="">Văn bản, biểu mẫu</a>
+                      </div>
+                      <div class="menu-tree-map-item menu-tree-map-item-right">
+                        <a href="">Chương trình đạo </a>
+                        <div class="sis-circle"></div>
+                      </div>
+                    </div>
+                    <div class="menu-tree-map-img">
+                      <img src="/img/logo-circle.png" alt="logo" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-12">
+                <div class="add-news">
+                  <i class="fa-solid fa-caret-right"></i>
+                  <i class="fa-solid fa-caret-right"></i>
+                  TIN NỔI BẬT
+                </div>
+                <div class="add-news-list m-1">
+                  <div class="card-wrapper">
+                    <div class="thumbnail">
+                      <img src="img/bg.jpg" alt="Ảnh minh họa" />
+                    </div>
+                    <div class="card-title">
+                      Danh sách thí sinh đủ điều kiện dự tuyển kỳ thi tuyển sinh
+                      Sau đại học năm 2025 Danh sách thí sinh đủ điều kiện dự
+                      tuyển kỳ thi tuyển sinh Sau đại học năm 2025... Danh sách
+                      thí sinh đủ điều kiện dự tuyển kỳ thi tuyển sinh Sau đại
+                      học năm 2025... Danh sách thí sinh đủ điều kiện dự tuyển
+                      kỳ thi tuyển sinh Sau đại học năm 2025...
+                    </div>
+                  </div>
+                  <div class="card-wrapper">
+                    <div class="thumbnail">
+                      <img src="img/bg.jpg" alt="Ảnh minh họa" />
+                    </div>
+                    <div class="card-title">
+                      Danh sách thí sinh đủ điều kiện dự tuyển kỳ thi tuyển sinh
+                      Sau đại học năm 2025 Danh sách thí sinh đủ điều kiện dự
+                      tuyển kỳ thi tuyển sinh Sau đại học năm 2025... Danh sách
+                      thí sinh đủ điều kiện dự tuyển kỳ thi tuyển sinh Sau đại
+                      học năm 2025... Danh sách thí sinh đủ điều kiện dự tuyển
+                      kỳ thi tuyển sinh Sau đại học năm 2025...
+                    </div>
+                  </div>
+                  <div class="card-wrapper">
+                    <div class="thumbnail">
+                      <img src="img/bg.jpg" alt="Ảnh minh họa" />
+                    </div>
+                    <div class="card-title">
+                      Danh sách thí sinh đủ điều kiện dự tuyển kỳ thi tuyển sinh
+                      Sau đại học năm 2025 Danh sách thí sinh đủ điều kiện dự
+                      tuyển kỳ thi tuyển sinh Sau đại học năm 2025... Danh sách
+                      thí sinh đủ điều kiện dự tuyển kỳ thi tuyển sinh Sau đại
+                      học năm 2025... Danh sách thí sinh đủ điều kiện dự tuyển
+                      kỳ thi tuyển sinh Sau đại học năm 2025...
+                    </div>
+                  </div>
+                  <div class="card-wrapper">
+                    <div class="thumbnail">
+                      <img src="img/bg.jpg" alt="Ảnh minh họa" />
+                    </div>
+                    <div class="card-title">
+                      Danh sách thí sinh đủ điều kiện dự tuyển kỳ thi tuyển sinh
+                      Sau đại học năm 2025 Danh sách thí sinh đủ điều kiện dự
+                      tuyển kỳ thi tuyển sinh Sau đại học năm 2025... Danh sách
+                      thí sinh đủ điều kiện dự tuyển kỳ thi tuyển sinh Sau đại
+                      học năm 2025... Danh sách thí sinh đủ điều kiện dự tuyển
+                      kỳ thi tuyển sinh Sau đại học năm 2025...
+                    </div>
+                  </div>
+                  <div class="card-wrapper">
+                    <div class="thumbnail">
+                      <img src="img/bg.jpg" alt="Ảnh minh họa" />
+                    </div>
+                    <div class="card-title">
+                      Danh sách thí sinh đủ điều kiện dự tuyển kỳ thi tuyển sinh
+                      Sau đại học năm 2025 Danh sách thí sinh đủ điều kiện dự
+                      tuyển kỳ thi tuyển sinh Sau đại học năm 2025... Danh sách
+                      thí sinh đủ điều kiện dự tuyển kỳ thi tuyển sinh Sau đại
+                      học năm 2025... Danh sách thí sinh đủ điều kiện dự tuyển
+                      kỳ thi tuyển sinh Sau đại học năm 2025...
+                    </div>
+                  </div>
+                  <div class="card-wrapper">
+                    <div class="thumbnail">
+                      <img src="img/bg.jpg" alt="Ảnh minh họa" />
+                    </div>
+                    <div class="card-title">
+                      Danh sách thí sinh đủ điều kiện dự tuyển kỳ thi tuyển sinh
+                      Sau đại học năm 2025 Danh sách thí sinh đủ điều kiện dự
+                      tuyển kỳ thi tuyển sinh Sau đại học năm 2025... Danh sách
+                      thí sinh đủ điều kiện dự tuyển kỳ thi tuyển sinh Sau đại
+                      học năm 2025... Danh sách thí sinh đủ điều kiện dự tuyển
+                      kỳ thi tuyển sinh Sau đại học năm 2025...
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- Footer -->
+      <footer class="footer-sis">
+        <div
+          class="container-fluid py-3"
+          style="
+            background-image: url('img/bg-f.jpg');
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <div class="row">
+            <!-- Trái: Logo, thông tin, mạng xã hội -->
+            <div
+              class="col-lg-7 col-md-7 mb-3 mb-md-0 d-flex flex-column flex-md-row align-items-md-start align-items-center"
+            >
+              <!-- Logo -->
+              <img
+                src="/img/VNU-SIS-logo.png"
+                alt="SIS logo"
+                class="footer-sis-logo mb-2 mb-md-0 me-md-3"
+              />
+              <!-- Thông tin trường -->
+              <div class="footer-sis-info flex-grow-1">
+                <div
+                  class="footer-sis-text text-white mb-2"
+                  style="font-size: 0.97rem"
+                >
+                  <div>
+                    Bản quyền thuộc Trường Khoa học liên ngành và Nghệ thuật
+                  </div>
+                  <div>Giấy phép.</div>
+                  <div>
+                    Điện thoại: 0243 754 7716 | Hotline tuyển sinh: 098 129 0448
+                  </div>
+                  <div>
+                    Email: sis@vnu.edu.vn | truyenthongliennganh@vnu.edu.vn
+                  </div>
+                </div>
+                <!-- Social icons -->
+                <div class="footer-sis-social d-flex align-items-center gap-2">
+                  <a
+                    href="#"
+                    class="footer-social-icon facebook"
+                    title="Facebook"
+                    ><i class="fa-brands fa-square-facebook"></i
+                  ></a>
+                  <a href="#" class="footer-social-icon tiktok" title="TikTok"
+                    ><i class="fab fa-tiktok"></i
+                  ></a>
+                  <a href="#" class="footer-social-icon youtube" title="YouTube"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                  <a href="#" class="footer-social-icon zalo" title="Zalo">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg"
+                      alt="Zalo"
+                      style="
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 4px;
+                        background: #fff;
+                      "
+                    />
+                  </a>
+                  <span class="zalo-label ms-2">Official Account</span>
+                </div>
+              </div>
+            </div>
+            <!-- Phải: Danh sách giảng đường -->
+            <div
+              class="col-lg-5 col-md-5 d-flex flex-column justify-content-start align-items-md-end align-items-start"
+            >
+              <div
+                class="footer-sis-campus text-white"
+                style="font-size: 0.98rem"
+              >
+                <div>Giảng đường Xuân Thủy: Giảng đường Xuân Thủy</div>
+                <div>Giảng đường Hòa Lạc: Giảng đường Xuân Thủy</div>
+                <div>Giảng đường Mỹ Đình: Giảng đường Xuân Thủy</div>
+                <div>Giảng đường Nghĩa Đô: Giảng đường Xuân Thủy</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- JS Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      async
+    ></script>
+    <!-- JS -->
+    <script src="javacsript.js" async></script>
+  </body>
+</html>
