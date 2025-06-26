@@ -1,6 +1,6 @@
 body {
   min-height: 100vh;
-  font-family: sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 16px;
   background: #fdf6e3;
   color: #222;
@@ -181,7 +181,7 @@ body {
 
 .dept-title {
   font-weight: bold;
-  color: #f7941e;
+  color: #ffa304;
   font-size: 15px;
   margin-bottom: 8px;
   line-height: 1.4;
@@ -195,7 +195,7 @@ body {
 
 .dept-info {
   font-size: 14px;
-  color: #333;
+  color: #0d2c6c;
 }
 
 .dept-info div {
@@ -233,7 +233,7 @@ body {
 .member-name {
   font-size: 2rem;
   font-weight: 800;
-  color: #002b7f;
+  color: #0d2c6c;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 4px;
@@ -249,7 +249,7 @@ body {
 /* Chức danh ----------------------------------------------- */
 .member-title {
   font-size: 1.55rem;
-  color: #173977;
+  color: #0d2c6c;
   font-weight: 400;
   text-align: center;
   line-height: 1.4;
@@ -279,7 +279,7 @@ ul.sub-menu {
   margin-bottom: 8px;
   padding: 10px;
   cursor: pointer;
-  color: #003366;
+  color: #0d2c6c;
   font-weight: bold;
   position: relative;
 }
@@ -307,7 +307,7 @@ ul.sub-menu {
   border-radius: 5px;
   padding: 8px 15px;
   margin-bottom: 6px;
-  color: #003366;
+  color: #0d2c6c;
   font-weight: normal;
   cursor: pointer;
 }
@@ -335,9 +335,10 @@ ul.sub-menu {
   border-right: none;
 }
 .nav-link {
-  color: #f4a300;
+  color: #ffa304;
   text-transform: uppercase;
   font-size: 1rem;
+  font-weight: 500;
 }
 .nav-link:focus {
   color: #ffc100;
@@ -356,7 +357,7 @@ ul.sub-menu {
 }
 
 .navbar {
-  background-color: #122c66;
+  background-color: #0d2c6c;
 }
 
 .dropdown-menu {
@@ -415,7 +416,7 @@ ul.sub-menu {
 }
 .dropdown-item {
   padding: 10px 16px;
-  color: #1b4d6b;
+  color: #0d2c6c;
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
@@ -550,13 +551,13 @@ ul.sub-menu {
 .uni-main {
   font-weight: 700;
   font-size: 15px;
-  color: #153867;
+  color: #0d2c6c;
   text-transform: uppercase;
   letter-spacing: 0.1px;
 }
 .uni-sub {
   font-size: 10.5px;
-  color: #2360a5;
+  color: #0d2c6c;
   font-weight: 400;
   text-transform: none;
   margin-top: 0.5px;
@@ -615,11 +616,11 @@ ul.sub-menu {
   width: 120px;
   min-width: 90px;
   font-size: 15px;
-  color: #003366;
+  color: #0d2c6c;
   font-family: inherit;
 }
 .uni-search input::placeholder {
-  color: #7ca0c6;
+  color: #0d2c6c;
   font-size: 15px;
   font-style: italic;
   opacity: 1;
@@ -644,7 +645,7 @@ ul.sub-menu {
   margin-bottom: 0;
 }
 .uni-nav-item {
-  color: #0b2952;
+  color: #0d2c6c;
   font-weight: 700;
   font-size: 15px;
   padding: 5px 17px 5px 17px;
@@ -848,7 +849,7 @@ ul.sub-menu {
   align-items: center;
 }
 .headline-title {
-  color: #183868;
+  color: #0d2c6c;
   font-weight: bold;
   font-size: 1.17rem;
   letter-spacing: 0.1px;
@@ -865,7 +866,7 @@ ul.sub-menu {
 }
 .headline-meta {
   font-size: 0.97rem;
-  color: #8795ab;
+  color: #0d2c6c;
   margin-top: 6px;
   margin-left: 2px;
 }
@@ -907,7 +908,7 @@ ul.sub-menu {
 /* relate-news ---------------------------*/
 .related-news-box {
   min-width: 0;
-  color: #153868;
+  color: #0d2c6c;
   margin: 0 auto;
 }
 .related-title {
@@ -915,7 +916,7 @@ ul.sub-menu {
   align-items: center;
   font-size: 1.09rem;
   font-weight: 900;
-  color: #153868;
+  color: #0d2c6c;
   text-transform: uppercase;
   letter-spacing: 0.7px;
   margin-bottom: 11px;
@@ -936,7 +937,7 @@ ul.sub-menu {
 }
 .related-list li {
   font-size: 0.99rem;
-  color: #153868;
+  color: #0d2c6c;
   margin-bottom: 4px;
   line-height: 1.37;
   padding-left: 0;
@@ -947,7 +948,7 @@ ul.sub-menu {
 }
 .related-list li::marker {
   font-size: 0.76rem;
-  color: #153868;
+  color: #0d2c6c;
 }
 .related-list li:hover {
   color: #e5a100;
@@ -986,7 +987,7 @@ ul.sub-menu {
   border-radius: 50%;
   font-size: 1.11rem;
   background: #f3f3f3;
-  color: #4569b0;
+  color: #0d2c6c;
   transition: box-shadow 0.15s, background 0.13s;
   box-shadow: 0 1.5px 8px 0 rgba(30, 50, 80, 0.09);
   margin-right: 0;
@@ -1066,15 +1067,15 @@ ul.sub-menu {
   color: #f4a600;
 }
 .info-block-title.primary {
-  color: #153868;
+  color: #0d2c6c;
 }
 .info-block-title.white {
   color: #fff;
 }
 .info-block-card.bg-blue {
-  background: #153868;
+  background: #0d2c6c;
   color: #fff;
-  border-color: #4561b5;
+  border-color: #0d2c6c;
 }
 .info-block-card.bg-orange {
   background: #e89425;
@@ -1083,7 +1084,7 @@ ul.sub-menu {
 }
 .info-block-card.bg-white {
   background: #fff;
-  color: #153868;
+  color: #0d2c6c;
   border-color: #d2dbe7;
 }
 .info-block-list {
@@ -1158,7 +1159,7 @@ ul.sub-menu {
   flex-shrink: 0;
 }
 .contact-info-title {
-  color: #1573c0;
+  color: #0d2c6c;
   text-transform: uppercase;
   font-weight: 800;
   font-size: 1.04rem;
@@ -1177,7 +1178,7 @@ ul.sub-menu {
   margin-right: 1.5px;
 }
 .contact-info-link {
-  color: #222;
+  color: #0d2c6c;
   text-decoration: underline;
   font-weight: 500;
   font-size: 1.01rem;
@@ -1613,7 +1614,7 @@ ul.sub-menu {
 }
 
 .bg-primary-btn {
-  background-color: #003366;
+  background-color: #0d2c6c;
   margin-top: 10rem;
 }
 
@@ -2058,7 +2059,6 @@ ul.sub-menu {
 }
 @media (max-width: 575px) {
   .card-short-news {
-    flex-direction: column !important;
     max-width: 100%;
     min-height: unset;
     padding: 7px 3px;
@@ -3065,7 +3065,7 @@ ul.sub-menu {
 }
 
 .bg-content-blue {
-  background-color: #003366;
+  background-color: #0d2c6c;
 }
 
 .min-w-300 {
@@ -3081,7 +3081,7 @@ ul.sub-menu {
 }
 
 .text-blue {
-  color: #003366;
+  color: #0d2c6c;
 }
 
 .edu-major-divider-right-orange {
