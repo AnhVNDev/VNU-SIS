@@ -320,7 +320,7 @@
           <div class="news-wrap p-4">
             <div class="row">
               <div class="col-xl-2 col-lg-12 col-md-12 side-menu-layout">
-                <ul class="side-menu">
+                <ul class="side-menu side-menu-main">
                   <li class="menu-item" data-target="sub-daihoc">
                     ĐẠI HỌC <span class="toggle-icon">+</span>
                   </li>
@@ -354,139 +354,53 @@
                     <li class="sub-item">Các khóa học ngắn hạn</li>
                   </ul>
                 </ul>
-                <ul class="nav menu-horiz-anhv justify-content-center d-none">
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link menu-horiz-link dropdown-toggle"
-                      href="#"
-                      id="menuDH"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      ĐẠI HỌC
-                    </a>
-                    <ul
-                      class="dropdown-menu menu-horiz-dropdown"
-                      aria-labelledby="menuDH"
-                    >
-                      <li>
-                        <a
-                          class="dropdown-item menu-horiz-dropdown-item"
-                          href="#"
-                          >Chương trình đào tạo</a
-                        >
+                <div class="row">
+                  <div class="col-3">
+                    <ul class="side-menu">
+                      <li class="menu-item" data-target="sub-daihoc-mb">
+                        ĐẠI HỌC <span class="toggle-icon">+</span>
                       </li>
-                      <li>
-                        <a
-                          class="dropdown-item menu-horiz-dropdown-item"
-                          href="#"
-                          >Điều kiện tuyển sinh</a
-                        >
-                      </li>
+                      <ul class="sub-menu" id="sub-daihoc-mb">
+                        <li class="sub-item">Chương trình đào tạo</li>
+                        <li class="sub-item">Điều kiện tuyển sinh</li>
+                      </ul>
                     </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link menu-horiz-link dropdown-toggle"
-                      href="#"
-                      id="menuThacSi"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      THẠC SĨ
-                    </a>
-                    <ul
-                      class="dropdown-menu menu-horiz-dropdown"
-                      aria-labelledby="menuThacSi"
-                    >
-                      <li>
-                        <a
-                          class="dropdown-item menu-horiz-dropdown-item"
-                          href="#"
-                          >Thông tin tuyển sinh</a
-                        >
+                  </div>
+                  <div class="col-3">
+                    <ul class="side-menu">
+                      <li class="menu-item" data-target="sub-thacsi-mb">
+                        THẠC SĨ <span class="toggle-icon">+</span>
                       </li>
-                      <li>
-                        <a
-                          class="dropdown-item menu-horiz-dropdown-item"
-                          href="#"
-                          >Học bổ sung kiến thức</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item menu-horiz-dropdown-item"
-                          href="#"
-                          >Tin bài thạc sĩ</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="dropdown-item menu-horiz-dropdown-item"
-                          href="#"
-                          >Hỏi đáp</a
-                        >
-                      </li>
+                      <ul class="sub-menu" id="sub-thacsi-mb">
+                        <li class="sub-item">Thông tin tuyển sinh</li>
+                        <li class="sub-item">Học bổ sung kiến thức</li>
+                        <li class="sub-item">Tin bài thạc sĩ</li>
+                        <li class="sub-item">Hỏi đáp</li>
+                      </ul>
                     </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link menu-horiz-link dropdown-toggle"
-                      href="#"
-                      id="menuTienSi"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      TIẾN SĨ
-                    </a>
-                    <ul
-                      class="dropdown-menu menu-horiz-dropdown"
-                      aria-labelledby="menuTienSi"
-                    >
-                      <li>
-                        <a
-                          class="dropdown-item menu-horiz-dropdown-item"
-                          href="#"
-                          >Đề tài nghiên cứu</a
-                        >
+                  </div>
+                  <div class="col-3">
+                    <ul class="side-menu">
+                      <li class="menu-item" data-target="sub-tiensi-mb">
+                        TIẾN SĨ <span class="toggle-icon">+</span>
                       </li>
-                      <li>
-                        <a
-                          class="dropdown-item menu-horiz-dropdown-item"
-                          href="#"
-                          >Hướng dẫn</a
-                        >
-                      </li>
+                      <ul class="sub-menu" id="sub-tiensi-mb">
+                        <li class="sub-item">Đề tài nghiên cứu</li>
+                        <li class="sub-item">Hướng dẫn</li>
+                      </ul>
                     </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link menu-horiz-link dropdown-toggle"
-                      href="#"
-                      id="menuNganHan"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      NGẮN HẠN
-                    </a>
-                    <ul
-                      class="dropdown-menu menu-horiz-dropdown"
-                      aria-labelledby="menuNganHan"
-                    >
-                      <li>
-                        <a
-                          class="dropdown-item menu-horiz-dropdown-item"
-                          href="#"
-                          >Các khóa học ngắn hạn</a
-                        >
+                  </div>
+                  <div class="col-3">
+                    <ul class="side-menu">
+                      <li class="menu-item" data-target="sub-nganhan-mb">
+                        NGẮN HẠN <span class="toggle-icon">+</span>
                       </li>
+                      <ul class="sub-menu" id="sub-nganhan-mb">
+                        <li class="sub-item">Các khóa học ngắn hạn</li>
+                      </ul>
                     </ul>
-                  </li>
-                </ul>
+                  </div>
+                </div>
               </div>
               <div class="col-xl-8 col-lg-8 col-12 news-list">
                 <div class="row align-items-start news-card">
