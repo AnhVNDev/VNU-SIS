@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tuyển sinh</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="icon" type="image/png" href="/img/VNU-SIS-logo.png" />
     <!-- CSS Bootstrap -->
     <link
@@ -80,13 +85,13 @@
           </div>
         </header>
          <!-- nav-bar -->
-        <nav class="navbar navbar-expand-lg navbar-dark ">
+        <nav class="navbar navbar-expand-lg navbar-dark">
           <div class="container-fluid">
             <button
               class="navbar-toggler"
               type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
               aria-controls="navbarNav"
               aria-expanded="false"
               aria-label="Toggle navigation"
@@ -164,6 +169,105 @@
                   <a class="nav-link" href="#">TIN TỨC</a>
                 </li>
               </ul>
+            </div>
+          </div>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-menu">
+              <div class="modal-content modal-content-menu">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="collapse navbar-collapse show">
+                  <ul class="navbar-nav navbar-nav-mobile">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">GIỚI THIỆU</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle dropdown-toggle-mobile"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        >TUYỂN SINH</a
+                      >
+                      <ul class="dropdown-menu dropdown-menu-mobile">
+                        <li>
+                          <a class="dropdown-item dropdown-item-mobile" href="#">Thông tin chung</a>
+                        </li>
+                        <li class="dropdown-submenu dropdown-submenu-mobile">
+                          <a class="dropdown-item dropdown-item-mobile dropdown-toggle dropdown-toggle-mobile" href="#"
+                            >Hồ sơ</a
+                          >
+                          <ul class="dropdown-menu dropdown-menu-mobile">
+                            <li>
+                              <a class="dropdown-item dropdown-item-mobile" href="#">Cấp 3 - A</a>
+                            </li>
+                            <li class="dropdown-submenu dropdown-submenu-mobile">
+                              <a class="dropdown-item dropdown-item-mobile dropdown-toggle dropdown-toggle-mobile" href="#"
+                                >Cấp 4 - B</a
+                              >
+                              <ul class="dropdown-menu dropdown-menu-mobile">
+                                <li>
+                                  <a class="dropdown-item dropdown-item-mobile" href="#"
+                                    >Cấp 5 - C</a
+                                  >
+                                </li>
+                                <li class="dropdown-submenu dropdown-submenu-mobile">
+                                  <a
+                                    class="dropdown-item dropdown-item-mobile dropdown-toggle dropdown-toggle-mobile"
+                                    href="#"
+                                    >Cấp 6 - D</a
+                                  >
+                                  <ul class="dropdown-menu dropdown-menu-mobile">
+                                    <li>
+                                      <a class="dropdown-item dropdown-item-mobile" href="#"
+                                        >Cấp 7 - E</a
+                                      >
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">ĐÀO TẠO</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">KHOA HỌC CÔNG NGHỆ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">HỢP TÁC & PHÁT TRIỂN</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">ĐẢM BẢO CHẤT LƯỢNG</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">NGƯỜI HỌC SIS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">CỰU NGƯỜI HỌC SIS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">TIN TỨC</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </nav>
