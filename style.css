@@ -1677,7 +1677,7 @@ ul.sub-menu {
   box-shadow: 0 0 0 6px #faf4e7;
 }
 .grid-box {
-  width: 210px;
+  width: 160px;
   height: 150px;
   background: #faf4e7;
   display: flex;
@@ -1888,7 +1888,7 @@ ul.sub-menu {
 }
 
 .quick-content-wrap-img {
-  padding: 2rem;
+  padding: 2rem 0 2rem 1rem;
 }
 
 .box-title-notify {
@@ -2092,7 +2092,7 @@ ul.sub-menu {
 }
 
 .card-short-list {
-  max-height: calc(100vh - 300px);
+  max-height: calc(100vh - 150px);
   overflow: scroll;
   padding: 0.25rem;
   width: 100%;
