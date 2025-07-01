@@ -1,7 +1,11 @@
+/* html {
+  font-size: 14px;
+} */
+
 body {
   min-height: 100vh;
   font-family: "Quicksand", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   background: #fdf6e3;
   color: #222;
   -webkit-font-smoothing: antialiased;
@@ -1596,6 +1600,10 @@ ul.sub-menu {
   padding: 4rem 2rem;
 }
 
+.quick-content-wrap h2{
+  font-family: "PhuDu", sans-serif;
+}
+
 .text-white {
   color: #ffff;
 }
@@ -1791,15 +1799,15 @@ ul.sub-menu {
   background: linear-gradient(90deg, #fcbe59 0%, #f7c87d 50%, #fc9040 100%);
 }
 .info-portal-icon {
-  width: 58px;
-  height: 58px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
 }
 .info-portal-link {
   color: #304a81;
   font-size: 1.07rem;
   line-height: 1.15;
-  font-weight: bold;
+  font-weight: 500;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -3123,6 +3131,9 @@ ul.sub-menu {
 
 .side-menu-mb {
   display: none;
+}
+.info-portal-col{
+  justify-content: center;
 }
 /* responsive-mobile-tablet */
 @media (max-width: 1024px) {
