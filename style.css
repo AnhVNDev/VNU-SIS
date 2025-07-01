@@ -515,7 +515,7 @@ ul.sub-menu {
 /* Headers ---------------------------------------*/
 .uni-header {
   width: 100%;
-  background: #f9f6ef;
+  background: #fff7e7;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1629,7 +1629,7 @@ ul.sub-menu {
 }
 
 .bg-soft {
-  background-color: #faf4e7;
+  background-color: #fff7e7;
 }
 .icon-square {
   width: 28px;
@@ -1674,12 +1674,12 @@ ul.sub-menu {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 0 6px #faf4e7;
+  box-shadow: 0 0 0 6px #fff7e7;
 }
 .grid-box {
   width: 160px;
   height: 150px;
-  background: #faf4e7;
+  background: #fff7e7;
   display: flex;
   align-items: center;
   justify-content: center;
