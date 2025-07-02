@@ -248,7 +248,7 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-family: 'PhuDu', sans-serif;
+  font-family: "PhuDu", sans-serif;
 }
 
 /* Chức danh ----------------------------------------------- */
@@ -265,7 +265,7 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-family: 'PhuDu', sans-serif;
+  font-family: "PhuDu", sans-serif;
 }
 
 /* side-menu ----------------------------------------------- */
@@ -345,7 +345,7 @@ ul.sub-menu {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 500;
-  font-family: 'PhuDu', sans-serif;
+  font-family: "PhuDu", sans-serif;
 }
 .nav-link:focus {
   color: #ffc100;
@@ -664,7 +664,7 @@ ul.sub-menu {
   text-transform: uppercase;
   letter-spacing: 0.7px;
   display: inline-block;
-  font-family: 'PhuDu', sans-serif;
+  font-family: "PhuDu", sans-serif;
 }
 .uni-nav-item.active,
 .uni-nav-item:hover {
@@ -707,14 +707,14 @@ ul.sub-menu {
     width: 100%;
     overflow-y: auto;
   }
-  .quarter-circle{
+  .quarter-circle {
     display: none;
   }
 
-  .grid-box{
+  .grid-box {
     border-radius: 28px !important;
   }
-  .custom-4box-grid{
+  .custom-4box-grid {
     width: 100% !important;
   }
 }
@@ -754,7 +754,7 @@ ul.sub-menu {
   .uni-search {
     max-width: 100%;
   }
-  .uni-nav-desktop{
+  .uni-nav-desktop {
     display: none;
   }
 }
@@ -1080,7 +1080,7 @@ ul.sub-menu {
   letter-spacing: 0.8px;
   line-height: 1.14;
   display: block;
-  font-family: 'PhuDu', sans-serif;
+  font-family: "PhuDu", sans-serif;
 }
 .info-block-title.orange {
   color: #f4a600;
@@ -1612,7 +1612,7 @@ ul.sub-menu {
   padding: 4rem 2rem;
 }
 
-.quick-content-wrap h2{
+.quick-content-wrap h2 {
   font-family: "PhuDu", sans-serif;
 }
 
@@ -2256,7 +2256,7 @@ ul.sub-menu {
   color: #143574;
   text-transform: uppercase;
   letter-spacing: 0.01em;
-  font-family: 'PhuDu', sans-serif;
+  font-family: "PhuDu", sans-serif;
 }
 
 .program-header-title-2-row {
@@ -2354,7 +2354,7 @@ ul.sub-menu {
   align-items: flex-start;
   line-height: 1.15;
   padding: 10px 10px 10px 20px;
-  font-family: 'PhuDu', sans-serif;
+  font-family: "PhuDu", sans-serif;
 }
 .content-col {
   background: #eda64b99;
@@ -2502,7 +2502,7 @@ ul.sub-menu {
   position: relative;
   z-index: 2;
   padding: 10px 20px 10px 10px;
-  font-family: 'PhuDu', sans-serif;
+  font-family: "PhuDu", sans-serif;
 }
 
 @media (max-width: 991.98px) {
@@ -2585,7 +2585,7 @@ ul.sub-menu {
   font-size: 1.25em;
   font-weight: 700;
   color: #18376b;
-  font-family: 'PhuDu', sans-serif;
+  font-family: "PhuDu", sans-serif;
 }
 
 .add-news i {
@@ -2664,7 +2664,7 @@ ul.sub-menu {
   overflow: hidden;
   text-overflow: ellipsis;
   word-break: break-word;
-  font-family: 'PhuDu', sans-serif;
+  font-family: "PhuDu", sans-serif;
 }
 
 .unit-intro-content-content {
@@ -2747,7 +2747,7 @@ ul.sub-menu {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-family: 'PhuDu', sans-serif;
+  font-family: "PhuDu", sans-serif;
 }
 .edu-major-divider {
   width: 3px;
@@ -2773,7 +2773,7 @@ ul.sub-menu {
   text-align: left;
   min-width: 56px;
   user-select: none;
-  font-family: 'PhuDu', sans-serif;
+  font-family: "PhuDu", sans-serif;
 }
 .edu-major-label span {
   display: block;
@@ -3004,7 +3004,7 @@ ul.sub-menu {
   overflow: hidden;
   text-overflow: ellipsis;
   word-break: break-word;
-  font-family: 'PhuDu', sans-serif;
+  font-family: "PhuDu", sans-serif;
 }
 
 .principal-msg-desc {
@@ -3146,25 +3146,29 @@ ul.sub-menu {
 .side-menu-mb {
   display: none;
 }
-.info-portal-col{
+.info-portal-col {
   justify-content: center;
 }
-.uni-nav-mobile, .uni-lang-and-search-mobile {
+.uni-nav-mobile,
+.uni-lang-and-search-mobile {
   display: none;
 }
-.uni-nav-mobile .uni-nav-item{
- color: #ffa851;
+.uni-nav-mobile .uni-nav-item {
+  color: #ffa851;
 }
 
-.uni-nav-mobile{
+.uni-nav-mobile {
   width: 100%;
   justify-content: space-evenly;
 }
 
-.navbar-collapse{
+.navbar-collapse {
   overflow-y: auto;
 }
-.uni-logo-mobile{
+.uni-logo-mobile {
+  display: none;
+}
+#eventCarousel-mobile {
   display: none;
 }
 /* responsive-mobile-tablet */
@@ -3258,15 +3262,22 @@ ul.sub-menu {
     margin-left: 0px;
     width: auto !important;
   }
-}
-@media (max-width: 600px) {
-  .uni-header-desktop{
+  #eventCarousel-mobile {
+    display: block;
+  }
+  #eventCarousel-desktop {
     display: none;
   }
-  .uni-nav-mobile, .uni-lang-and-search-mobile {
+}
+@media (max-width: 600px) {
+  .uni-header-desktop {
+    display: none;
+  }
+  .uni-nav-mobile,
+  .uni-lang-and-search-mobile {
     display: flex;
   }
-  .uni-logo-mobile{
+  .uni-logo-mobile {
     display: block;
   }
 }
@@ -3315,6 +3326,6 @@ ul.sub-menu {
   margin-left: 12px;
 }
 
-.phudu{
-  font-family: 'PhuDu', sans-serif;
+.phudu {
+  font-family: "PhuDu", sans-serif;
 }
