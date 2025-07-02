@@ -30,7 +30,7 @@
     <div class="container-fluid body-content">
       <!-- Headers -->
       <div class="position-sticky top-0 z-10">
-        <header class="uni-header">
+        <header class="uni-header uni-header-desktop">
           <!-- Left: Logo + School Info -->
           <div class="uni-header-left">
             <!-- Logo: SVG SIS -->
@@ -49,7 +49,7 @@
             </div>
           </div>
           <!-- Right: Flags + Nav + Search -->
-          <div class="uni-header-right">
+          <div class="uni-header-right ">
             <nav class="uni-nav">
               <a href="#" class="uni-nav-item active">VNU</a>
               <a href="#" class="uni-nav-item">THƯ VIỆN SỐ</a>
@@ -90,6 +90,9 @@
         <!-- nav-bar -->
         <nav class="navbar navbar-expand-lg navbar-dark">
           <div class="container-fluid">
+             <div class="uni-logo uni-logo-mobile">
+              <img src="./img/VNU-SIS-logo.png" alt="Logo SIS" />
+            </div>
             <button
               class="navbar-toggler"
               type="button"
@@ -289,6 +292,41 @@
                       <a class="nav-link" href="#">TIN TỨC</a>
                     </li>
                   </ul>
+                  <nav class="uni-nav uni-nav-mobile">
+                    <a href="#" class="uni-nav-item active">VNU</a>
+                    <a href="#" class="uni-nav-item">THƯ VIỆN SỐ</a>
+                    <a href="#" class="uni-nav-item">LIÊN HỆ</a>
+                  </nav>
+                  <div class="uni-lang-and-search uni-lang-and-search-mobile">
+                    <div class="uni-lang-flags">
+                      <img src="https://flagcdn.com/w20/vn.png" alt="VN" />
+                      <img src="https://flagcdn.com/w20/gb.png" alt="EN" />
+                      <img src="https://flagcdn.com/w20/cn.png" alt="CN" />
+                    </div>
+                    <div class="uni-search">
+                      <span class="uni-search-icon">
+                        <svg height="20" width="20" viewBox="0 0 24 24">
+                          <circle
+                            cx="11"
+                            cy="11"
+                            r="8"
+                            stroke="#003366"
+                            stroke-width="2"
+                            fill="none"
+                          />
+                          <line
+                            x1="16"
+                            y1="16"
+                            x2="22"
+                            y2="22"
+                            stroke="#003366"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </span>
+                      <input type="text" placeholder="Tìm kiếm…" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -418,9 +456,7 @@
                     </div>
                   </div>
                 </div>
-                <div
-                  class="d-flex align-items-center px-2"
-                >
+                <div class="d-flex align-items-center px-2">
                   <span
                     class="fw-bold"
                     style="
