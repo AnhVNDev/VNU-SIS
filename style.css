@@ -3171,6 +3171,14 @@ ul.sub-menu {
 #eventCarousel-mobile {
   display: none;
 }
+
+.eventCarousel-wrap-info-portal{
+  margin-bottom: 1rem;
+}
+
+.custom-dots-info-portal{
+  bottom: -26px !important;
+}
 /* responsive-mobile-tablet */
 @media (max-width: 1024px) {
   .nav-item {
