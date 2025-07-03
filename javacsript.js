@@ -188,3 +188,34 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+$(document).ready(function () {
+  $("#owl-carousel-portal").owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: false,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: { items: 1 },
+      600: { items: 2 },
+      1000: { items: 4 },
+    },
+  });
+  $("#owl-carousel-event").owlCarousel({
+    loop: true,
+    nav: false,
+    margin: 10,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 1000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: { items: 1 },
+      600: { items: 2 },
+      1000: { items: 4 },
+    },
+  });
+});

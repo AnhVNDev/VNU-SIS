@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Giới thiệu</title>
-   <link
+    <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
@@ -25,13 +25,22 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <!-- Style -->
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container-fluid body-content">
       <!-- Headers -->
-      <div class="position-sticky top-0">
-        <header class="uni-header">
+      <div class="position-sticky top-0 z-10">
+        <header class="uni-header uni-header-desktop">
           <!-- Left: Logo + School Info -->
           <div class="uni-header-left">
             <!-- Logo: SVG SIS -->
@@ -91,6 +100,9 @@
         <!-- nav-bar -->
         <nav class="navbar navbar-expand-lg navbar-dark">
           <div class="container-fluid">
+            <div class="uni-logo uni-logo-mobile">
+              <img src="./img/VNU-SIS-logo.png" alt="Logo SIS" />
+            </div>
             <button
               class="navbar-toggler"
               type="button"
@@ -193,7 +205,9 @@
                     aria-label="Close"
                   ></button>
                 </div>
-                <div class="collapse navbar-collapse show">
+                <div
+                  class="collapse navbar-collapse navbar-collapse-mobile show"
+                >
                   <ul class="navbar-nav navbar-nav-mobile">
                     <li class="nav-item">
                       <a class="nav-link" href="#">GIỚI THIỆU</a>
@@ -208,35 +222,55 @@
                       >
                       <ul class="dropdown-menu dropdown-menu-mobile">
                         <li>
-                          <a class="dropdown-item dropdown-item-mobile" href="#">Thông tin chung</a>
+                          <a class="dropdown-item dropdown-item-mobile" href="#"
+                            >Thông tin chung</a
+                          >
                         </li>
                         <li class="dropdown-submenu dropdown-submenu-mobile">
-                          <a class="dropdown-item dropdown-item-mobile dropdown-toggle dropdown-toggle-mobile" href="#"
+                          <a
+                            class="dropdown-item dropdown-item-mobile dropdown-toggle dropdown-toggle-mobile"
+                            href="#"
                             >Hồ sơ</a
                           >
                           <ul class="dropdown-menu dropdown-menu-mobile">
                             <li>
-                              <a class="dropdown-item dropdown-item-mobile" href="#">Cấp 3 - A</a>
+                              <a
+                                class="dropdown-item dropdown-item-mobile"
+                                href="#"
+                                >Cấp 3 - A</a
+                              >
                             </li>
-                            <li class="dropdown-submenu dropdown-submenu-mobile">
-                              <a class="dropdown-item dropdown-item-mobile dropdown-toggle dropdown-toggle-mobile" href="#"
+                            <li
+                              class="dropdown-submenu dropdown-submenu-mobile"
+                            >
+                              <a
+                                class="dropdown-item dropdown-item-mobile dropdown-toggle dropdown-toggle-mobile"
+                                href="#"
                                 >Cấp 4 - B</a
                               >
                               <ul class="dropdown-menu dropdown-menu-mobile">
                                 <li>
-                                  <a class="dropdown-item dropdown-item-mobile" href="#"
+                                  <a
+                                    class="dropdown-item dropdown-item-mobile"
+                                    href="#"
                                     >Cấp 5 - C</a
                                   >
                                 </li>
-                                <li class="dropdown-submenu dropdown-submenu-mobile">
+                                <li
+                                  class="dropdown-submenu dropdown-submenu-mobile"
+                                >
                                   <a
                                     class="dropdown-item dropdown-item-mobile dropdown-toggle dropdown-toggle-mobile"
                                     href="#"
                                     >Cấp 6 - D</a
                                   >
-                                  <ul class="dropdown-menu dropdown-menu-mobile">
+                                  <ul
+                                    class="dropdown-menu dropdown-menu-mobile"
+                                  >
                                     <li>
-                                      <a class="dropdown-item dropdown-item-mobile" href="#"
+                                      <a
+                                        class="dropdown-item dropdown-item-mobile"
+                                        href="#"
                                         >Cấp 7 - E</a
                                       >
                                     </li>
@@ -270,6 +304,41 @@
                       <a class="nav-link" href="#">TIN TỨC</a>
                     </li>
                   </ul>
+                  <nav class="uni-nav uni-nav-mobile">
+                    <a href="#" class="uni-nav-item active">VNU</a>
+                    <a href="#" class="uni-nav-item">THƯ VIỆN SỐ</a>
+                    <a href="#" class="uni-nav-item">LIÊN HỆ</a>
+                  </nav>
+                  <div class="uni-lang-and-search uni-lang-and-search-mobile">
+                    <div class="uni-lang-flags">
+                      <img src="https://flagcdn.com/w20/vn.png" alt="VN" />
+                      <img src="https://flagcdn.com/w20/gb.png" alt="EN" />
+                      <img src="https://flagcdn.com/w20/cn.png" alt="CN" />
+                    </div>
+                    <div class="uni-search">
+                      <span class="uni-search-icon">
+                        <svg height="20" width="20" viewBox="0 0 24 24">
+                          <circle
+                            cx="11"
+                            cy="11"
+                            r="8"
+                            stroke="#003366"
+                            stroke-width="2"
+                            fill="none"
+                          />
+                          <line
+                            x1="16"
+                            y1="16"
+                            x2="22"
+                            y2="22"
+                            stroke="#003366"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </span>
+                      <input type="text" placeholder="Tìm kiếm…" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -539,7 +608,9 @@
             <img src="/img/bg.jpg" alt="Đội ngũ" />
           </div>
           <div class="row member-sis-content position-relative">
-            <div class="col-12 col-lg-10 col-md-10 member-sis-content-res phudu">
+            <div
+              class="col-12 col-lg-10 col-md-10 member-sis-content-res phudu"
+            >
               VỚI HƠN 20 NĂM UY TÍN TRONG LĨNH VỰC QUẢN LÝ GIÁO DỤC VÀ ĐÀO TẠO
               VỚI TRIẾT LÝ GIÁO DỤC “TƯ DUY LIÊN NGÀNH – TINH THẦN KHAI PHÓNG –
               TẦM NHÌN TOÀN CẦU”. MỤC TIÊU LỚN CỦA NHÀ TRƯỜNG LÀ TRỞ THÀNH ĐƠN
@@ -824,138 +895,35 @@
               >
             </div>
           </div>
-          <div
-            id="eventCarousel"
-            class="carousel slide event-carousel eventCarousel-wrap eventCarousel-wrap-none"
-            data-bs-ride="carousel"
-            data-bs-interval="1000"
-            data-bs-pause="hover"
-          >
-            <div class="carousel-inner">
-              <!-- SLIDE 1 -->
-
-              <div class="carousel-item active">
-                <div class="row gx-3">
-                  <!-- CARD 1 -->
-                  <div class="col-12 col-sm-6 col-lg-4 carousel-card-item">
-                    <div class="event-card event-card-none">
-                      <img
-                        src="/img/bg.jpg"
-                        class="event-img event-img-none"
-                        alt="Sự kiện 1"
-                      />
-                      <div class="event-body">
-                        <div class="event-title event-title-none">
-                          The Future of Marketing: Predictions for the Next 5
-                          Years
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- CARD 2 -->
-                  <div class="col-12 col-sm-6 col-lg-4 carousel-card-item">
-                    <div class="event-card event-card-none">
-                      <img
-                        src="/img/bg.jpg"
-                        class="event-img event-img-none"
-                        alt="Sự kiện 1"
-                      />
-                      <div class="event-body">
-                        <div class="event-title event-title-none">
-                          The Future of Marketing: Predictions for the Next 5
-                          Years
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- CARD 3 -->
-                  <div class="col-12 col-sm-6 col-lg-4 carousel-card-item">
-                    <div class="event-card event-card-none">
-                      <img
-                        src="/img/bg.jpg"
-                        class="event-img event-img-none"
-                        alt="Sự kiện 1"
-                      />
-                      <div class="event-body">
-                        <div class="event-title event-title-none">
-                          The Future of Marketing: Predictions for the Next 5
-                          Years
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- SLIDE 2 -->
-              <div class="carousel-item">
-                <div class="row gx-3">
-                  <!-- CARD 1 -->
-                  <div class="col-12 col-sm-6 col-lg-4 carousel-card-item">
-                    <div class="event-card event-card-none">
-                      <img
-                        src="/img/bg.jpg"
-                        class="event-img event-img-none"
-                        alt="Sự kiện 1"
-                      />
-                      <div class="event-body">
-                        <div class="event-title event-title-none">
-                          The Future of Marketing: Predictions for the Next 5
-                          Years
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- CARD 2 -->
-                  <div class="col-12 col-sm-6 col-lg-4 carousel-card-item">
-                    <div class="event-card event-card-none">
-                      <img
-                        src="/img/bg.jpg"
-                        class="event-img event-img-none"
-                        alt="Sự kiện 1"
-                      />
-                      <div class="event-body">
-                        <div class="event-title event-title-none">
-                          The Future of Marketing: Predictions for the Next 5
-                          Years
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- CARD 3 -->
-                  <div class="col-12 col-sm-6 col-lg-4 carousel-card-item">
-                    <div class="event-card event-card-none">
-                      <img
-                        src="/img/bg.jpg"
-                        class="event-img event-img-none"
-                        alt="Sự kiện 1"
-                      />
-                      <div class="event-body">
-                        <div class="event-title event-title-none">
-                          The Future of Marketing: Predictions for the Next 5
-                          Years
-                        </div>
-                      </div>
-                    </div>
+          <div id="owl-carousel-event" class="owl-carousel mt-1">
+            <div class="carousel-card-item">
+              <div class="event-card event-card-none">
+                <img
+                  src="/img/bg.jpg"
+                  class="event-img event-img-none"
+                  alt="Sự kiện 1"
+                />
+                <div class="event-body">
+                  <div class="event-title event-title-none">
+                    The Future of Marketing: Predictions for the Next 5 Years
                   </div>
                 </div>
               </div>
             </div>
-            <!-- DOTS -->
-            <div class="carousel-indicators custom-dots">
-              <button
-                type="button"
-                data-bs-target="#eventCarousel"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#eventCarousel"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
+            <!-- CARD 2 -->
+            <div class="carousel-card-item">
+              <div class="event-card event-card-none">
+                <img
+                  src="/img/bg.jpg"
+                  class="event-img event-img-none"
+                  alt="Sự kiện 1"
+                />
+                <div class="event-body">
+                  <div class="event-title event-title-none">
+                    The Future of Marketing: Predictions for the Next 5 Years
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1051,6 +1019,13 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       async
+    ></script>
+    <!-- jQuery -->
+    <script async src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     ></script>
     <!-- JS -->
     <script src="javacsript.js" async></script>

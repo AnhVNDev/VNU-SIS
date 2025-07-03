@@ -1813,8 +1813,8 @@ ul.sub-menu {
   background: linear-gradient(90deg, #fcbe59 0%, #f7c87d 50%, #fc9040 100%);
 }
 .info-portal-icon {
-  width: 80px;
-  height: 80px;
+  width: 80px !important;
+  height: 80px !important;
   object-fit: contain;
 }
 .info-portal-link {
@@ -2299,6 +2299,10 @@ ul.sub-menu {
 .eventCarousel-wrap {
   margin-top: 4em;
   margin-bottom: 3em;
+}
+
+.carousel-card-item{
+  margin: 0 8px;
 }
 
 .carousel-card-item:hover {
@@ -2998,11 +3002,6 @@ ul.sub-menu {
   font-weight: 800;
   font-size: 2.35rem;
   line-height: 1.13;
-  display: -webkit-box;
-  -webkit-line-clamp: 3; /* Giới hạn 3 dòng */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
   word-break: break-word;
   font-family: "PhuDu", sans-serif;
 }
@@ -3045,11 +3044,6 @@ ul.sub-menu {
   font-weight: 600;
   font-size: 1.25rem;
   line-height: 1.13;
-  display: -webkit-box;
-  -webkit-line-clamp: 3; /* Giới hạn 3 dòng */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
   word-break: break-word;
 }
 
@@ -3058,11 +3052,6 @@ ul.sub-menu {
   font-size: 1.15rem;
   font-weight: 400;
   line-height: 1.23;
-  display: -webkit-box;
-  -webkit-line-clamp: 5; /* Giới hạn 5 dòng */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
   word-break: break-word;
 }
 
@@ -3276,6 +3265,9 @@ ul.sub-menu {
   #eventCarousel-desktop {
     display: none;
   }
+  .principal-msg-wrap{
+    padding: 0;
+  }
 }
 @media (max-width: 600px) {
   .uni-header-desktop {
@@ -3287,6 +3279,13 @@ ul.sub-menu {
   }
   .uni-logo-mobile {
     display: block;
+  }
+  .general-info-img{
+    display: none;
+  }
+  .edu-major-block{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }
 .w-80 {

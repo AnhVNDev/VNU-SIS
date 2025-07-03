@@ -24,6 +24,15 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <!-- Style -->
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -195,7 +204,9 @@
                     aria-label="Close"
                   ></button>
                 </div>
-                <div class="collapse navbar-collapse navbar-collapse-mobile show">
+                <div
+                  class="collapse navbar-collapse navbar-collapse-mobile show"
+                >
                   <ul class="navbar-nav navbar-nav-mobile">
                     <li class="nav-item">
                       <a class="nav-link" href="#">GIỚI THIỆU</a>
@@ -496,140 +507,50 @@
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="bg-gradient-custom border rounded-1 px-2">
-                <div
-                  id="eventCarousel-info-portal"
-                  class="carousel slide event-carousel eventCarousel-wrap-info-portal"
-                  data-bs-ride="carousel"
-                  data-bs-interval="4000"
-                  data-bs-pause="hover"
-                >
-                  <div class="carousel-inner">
-                    <!-- SLIDE 1 -->
-                    <div class="carousel-item active">
-                      <div class="row g-0 text-center text-lg-start">
-                        <div
-                          class="d-flex align-items-center info-portal-col col-lg-3 col-6 mb-2 mb-lg-0"
-                        >
-                          <img
-                            src="/img/1.png"
-                            class="info-portal-icon me-2"
-                            alt="Hành chính"
-                          />
-                          <a href="#" class="info-portal-link">
-                            CỔNG THÔNG TIN HÀNH CHÍNH
-                          </a>
-                        </div>
-                        <div
-                          class="d-flex align-items-center info-portal-col col-lg-3 col-6 mb-2 mb-lg-0"
-                        >
-                          <img
-                            src="/img/2.png"
-                            class="info-portal-icon me-2"
-                            alt="Tuyển sinh"
-                          />
-                          <a href="#" class="info-portal-link">
-                            CỔNG THÔNG TIN TUYỂN SINH
-                          </a>
-                        </div>
-                        <div
-                          class="d-flex align-items-center info-portal-col col-lg-3 col-6"
-                        >
-                          <img
-                            src="/img/3.png"
-                            class="info-portal-icon me-2"
-                            alt="Người học"
-                          />
-                          <a href="#" class="info-portal-link">
-                            CỔNG THÔNG TIN NGƯỜI HỌC
-                          </a>
-                        </div>
-                        <div
-                          class="d-flex align-items-center info-portal-col col-lg-3 col-6"
-                        >
-                          <img
-                            src="/img/4.png"
-                            class="info-portal-icon me-2"
-                            alt="Cán bộ"
-                          />
-                          <a href="#" class="info-portal-link">
-                            CỔNG THÔNG TIN CÁN BỘ
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- SLIDE 2 -->
-                    <div class="carousel-item">
-                      <div class="row g-0 text-center text-lg-start">
-                        <div
-                          class="d-flex align-items-center info-portal-col col-lg-3 col-6 mb-2 mb-lg-0"
-                        >
-                          <img
-                            src="/img/1.png"
-                            class="info-portal-icon me-2"
-                            alt="Hành chính"
-                          />
-                          <a href="#" class="info-portal-link">
-                            CỔNG THÔNG TIN HÀNH CHÍNH
-                          </a>
-                        </div>
-                        <div
-                          class="d-flex align-items-center info-portal-col col-lg-3 col-6 mb-2 mb-lg-0"
-                        >
-                          <img
-                            src="/img/2.png"
-                            class="info-portal-icon me-2"
-                            alt="Tuyển sinh"
-                          />
-                          <a href="#" class="info-portal-link">
-                            CỔNG THÔNG TIN TUYỂN SINH
-                          </a>
-                        </div>
-                        <div
-                          class="d-flex align-items-center info-portal-col col-lg-3 col-6"
-                        >
-                          <img
-                            src="/img/3.png"
-                            class="info-portal-icon me-2"
-                            alt="Người học"
-                          />
-                          <a href="#" class="info-portal-link">
-                            CỔNG THÔNG TIN NGƯỜI HỌC
-                          </a>
-                        </div>
-                        <div
-                          class="d-flex align-items-center info-portal-col col-lg-3 col-6"
-                        >
-                          <img
-                            src="/img/4.png"
-                            class="info-portal-icon me-2"
-                            alt="Cán bộ"
-                          />
-                          <a href="#" class="info-portal-link">
-                            CỔNG THÔNG TIN CÁN BỘ
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- DOTS -->
-                  <div class="carousel-indicators custom-dots  custom-dots-info-portal">
-                    <button
-                      type="button"
-                      data-bs-target="#eventCarousel-info-portal"
-                      data-bs-slide-to="0"
-                      class="active"
-                      aria-current="true"
-                      aria-label="Slide 1"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#eventCarousel-info-portal"
-                      data-bs-slide-to="1"
-                      aria-label="Slide 2"
-                    ></button>
-                  </div>
+            <div class="row bg-gradient-custom border rounded-1 px-2">
+              <div
+                id="owl-carousel-portal"
+                class="owl-carousel row g-0 text-center text-lg-start"
+              >
+                <div class="d-flex align-items-center info-portal-col">
+                  <img
+                    src="/img/1.png"
+                    class="info-portal-icon me-2"
+                    alt="Hành chính"
+                  />
+                  <a href="#" class="info-portal-link">
+                    CỔNG THÔNG TIN HÀNH CHÍNH
+                  </a>
+                </div>
+                <div class="d-flex align-items-center info-portal-col">
+                  <img
+                    src="/img/2.png"
+                    class="info-portal-icon me-2"
+                    alt="Tuyển sinh"
+                  />
+                  <a href="#" class="info-portal-link">
+                    CỔNG THÔNG TIN TUYỂN SINH
+                  </a>
+                </div>
+                <div class="d-flex align-items-center info-portal-col">
+                  <img
+                    src="/img/3.png"
+                    class="info-portal-icon me-2"
+                    alt="Người học"
+                  />
+                  <a href="#" class="info-portal-link">
+                    CỔNG THÔNG TIN NGƯỜI HỌC
+                  </a>
+                </div>
+                <div class="d-flex align-items-center info-portal-col">
+                  <img
+                    src="/img/4.png"
+                    class="info-portal-icon me-2"
+                    alt="Cán bộ"
+                  />
+                  <a href="#" class="info-portal-link">
+                    CỔNG THÔNG TIN CÁN BỘ
+                  </a>
                 </div>
               </div>
             </div>
@@ -1075,368 +996,58 @@
                 <button class="tab-filter-btn">Lịch tuyển sinh Thạc sĩ</button>
               </div>
             </div>
-            <div
-              id="eventCarousel-desktop"
-              class="carousel slide event-carousel eventCarousel-wrap"
-              data-bs-ride="carousel"
-              data-bs-interval="4000"
-              data-bs-pause="hover"
-            >
-              <div class="carousel-inner">
-                <!-- SLIDE 1 -->
-
-                <div class="carousel-item active">
-                  <div class="row gx-3">
-                    <!-- CARD 1 -->
-                    <div class="col-12 col-sm-6 col-lg-3 carousel-card-item">
-                      <div class="event-card">
-                        <img
-                          src="/img/bg.jpg"
-                          class="event-img"
-                          alt="Sự kiện 1"
-                        />
-                        <div class="event-body">
-                          <div
-                            class="event-header d-flex justify-content-between align-items-center"
-                          >
-                            <span class="event-date">02/06/2025</span>
-                            <button class="btn btn-register px-2 py-1">
-                              Đăng ký
-                            </button>
-                          </div>
-                          <div class="event-title">
-                            The Future of Marketing: Predictions for the Next 5
-                            Years
-                          </div>
-                          <div class="event-desc">
-                            Dự đoán xu hướng marketing và các công nghệ đột phá
-                            trong 5 năm tới...
-                          </div>
-                          <div class="event-category">
-                            <i class="fa-solid fa-tag"></i>
-                            NGHỆ THUẬT VÀ THIẾT KẾ
-                          </div>
-                        </div>
-                      </div>
+            <div id="owl-carousel-event" class="owl-carousel">
+              <div class="carousel-card-item">
+                <div class="event-card">
+                  <img src="/img/bg.jpg" class="event-img" alt="Sự kiện 1" />
+                  <div class="event-body">
+                    <div
+                      class="event-header d-flex justify-content-between align-items-center"
+                    >
+                      <span class="event-date">02/06/2025</span>
+                      <button class="btn btn-register px-2 py-1">
+                        Đăng ký
+                      </button>
                     </div>
-                    <!-- CARD 2 -->
-                    <div class="col-12 col-sm-6 col-lg-3 carousel-card-item">
-                      <div class="event-card">
-                        <img
-                          src="/img/bg.jpg"
-                          class="event-img"
-                          alt="Sự kiện 1"
-                        />
-                        <div class="event-body">
-                          <div
-                            class="event-header d-flex justify-content-between align-items-center"
-                          >
-                            <span class="event-date">02/06/2025</span>
-                            <button class="btn btn-register px-2 py-1">
-                              Đăng ký
-                            </button>
-                          </div>
-                          <div class="event-title">
-                            The Future of Marketing: Predictions for the Next 5
-                            Years
-                          </div>
-                          <div class="event-desc">
-                            Dự đoán xu hướng marketing và các công nghệ đột phá
-                            trong 5 năm tới...
-                          </div>
-                          <div class="event-category">
-                            <i class="fa-solid fa-tag"></i>
-                            NGHỆ THUẬT VÀ THIẾT KẾ
-                          </div>
-                        </div>
-                      </div>
+                    <div class="event-title">
+                      The Future of Marketing: Predictions for the Next 5 Years
                     </div>
-                    <!-- CARD 3 -->
-                    <div class="col-12 col-sm-6 col-lg-3 carousel-card-item">
-                      <div class="event-card">
-                        <img
-                          src="/img/bg.jpg"
-                          class="event-img"
-                          alt="Sự kiện 1"
-                        />
-                        <div class="event-body">
-                          <div
-                            class="event-header d-flex justify-content-between align-items-center"
-                          >
-                            <span class="event-date">02/06/2025</span>
-                            <button class="btn btn-register px-2 py-1">
-                              Đăng ký
-                            </button>
-                          </div>
-                          <div class="event-title">
-                            The Future of Marketing: Predictions for the Next 5
-                            Years
-                          </div>
-                          <div class="event-desc">
-                            Dự đoán xu hướng marketing và các công nghệ đột phá
-                            trong 5 năm tới...
-                          </div>
-                          <div class="event-category">
-                            <i class="fa-solid fa-tag"></i>
-                            NGHỆ THUẬT VÀ THIẾT KẾ
-                          </div>
-                        </div>
-                      </div>
+                    <div class="event-desc">
+                      Dự đoán xu hướng marketing và các công nghệ đột phá trong
+                      5 năm tới...
                     </div>
-                    <!-- CARD 4 -->
-                    <div class="col-12 col-sm-6 col-lg-3 carousel-card-item">
-                      <div class="event-card">
-                        <img
-                          src="/img/bg.jpg"
-                          class="event-img"
-                          alt="Sự kiện 1"
-                        />
-                        <div class="event-body">
-                          <div
-                            class="event-header d-flex justify-content-between align-items-center"
-                          >
-                            <span class="event-date">02/06/2025</span>
-                            <button class="btn btn-register px-2 py-1">
-                              Đăng ký
-                            </button>
-                          </div>
-                          <div class="event-title">
-                            The Future of Marketing: Predictions for the Next 5
-                            Years
-                          </div>
-                          <div class="event-desc">
-                            Dự đoán xu hướng marketing và các công nghệ đột phá
-                            trong 5 năm tới...
-                          </div>
-                          <div class="event-category">
-                            <i class="fa-solid fa-tag"></i>
-                            NGHỆ THUẬT VÀ THIẾT KẾ
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- SLIDE 2 -->
-                <div class="carousel-item">
-                  <div class="row gx-3">
-                    <!-- CARD 5 -->
-                    <div class="col-12 col-sm-6 col-lg-3 carousel-card-item">
-                      <div class="event-card">
-                        <img
-                          src="/img/bg.jpg"
-                          class="event-img"
-                          alt="Sự kiện 1"
-                        />
-                        <div class="event-body">
-                          <div
-                            class="event-header d-flex justify-content-between align-items-center"
-                          >
-                            <span class="event-date">02/06/2025</span>
-                            <button class="btn btn-register px-2 py-1">
-                              Đăng ký
-                            </button>
-                          </div>
-                          <div class="event-title">
-                            The Future of Marketing: Predictions for the Next 5
-                            Years
-                          </div>
-                          <div class="event-desc">
-                            Dự đoán xu hướng marketing và các công nghệ đột phá
-                            trong 5 năm tới...
-                          </div>
-                          <div class="event-category">
-                            <i class="fa-solid fa-tag"></i>
-                            NGHỆ THUẬT VÀ THIẾT KẾ
-                          </div>
-                        </div>
-                      </div>
+                    <div class="event-category">
+                      <i class="fa-solid fa-tag"></i>
+                      NGHỆ THUẬT VÀ THIẾT KẾ
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- DOTS -->
-              <div class="carousel-indicators custom-dots">
-                <button
-                  type="button"
-                  data-bs-target="#eventCarousel-desktop"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#eventCarousel-desktop"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-              </div>
-            </div>
-            <div
-              id="eventCarousel-mobile"
-              class="carousel slide event-carousel eventCarousel-wrap"
-              data-bs-ride="carousel"
-              data-bs-interval="4000"
-              data-bs-pause="hover"
-            >
-              <div class="carousel-inner">
-                <!-- SLIDE 1 -->
-
-                <div class="carousel-item active">
-                  <div class="row gx-3">
-                    <!-- CARD 1 -->
-                    <div class="col-6 carousel-card-item">
-                      <div class="event-card">
-                        <img
-                          src="/img/bg.jpg"
-                          class="event-img"
-                          alt="Sự kiện 1"
-                        />
-                        <div class="event-body">
-                          <div
-                            class="event-header d-flex justify-content-between align-items-center"
-                          >
-                            <span class="event-date">02/06/2025</span>
-                            <button class="btn btn-register px-2 py-1">
-                              Đăng ký
-                            </button>
-                          </div>
-                          <div class="event-title">
-                            The Future of Marketing: Predictions for the Next 5
-                            Years
-                          </div>
-                          <div class="event-desc">
-                            Dự đoán xu hướng marketing và các công nghệ đột phá
-                            trong 5 năm tới...
-                          </div>
-                          <div class="event-category">
-                            <i class="fa-solid fa-tag"></i>
-                            NGHỆ THUẬT VÀ THIẾT KẾ
-                          </div>
-                        </div>
-                      </div>
+              <div class="carousel-card-item">
+                <div class="event-card">
+                  <img src="/img/bg.jpg" class="event-img" alt="Sự kiện 1" />
+                  <div class="event-body">
+                    <div
+                      class="event-header d-flex justify-content-between align-items-center"
+                    >
+                      <span class="event-date">02/06/2025</span>
+                      <button class="btn btn-register px-2 py-1">
+                        Đăng ký
+                      </button>
                     </div>
-                    <!-- CARD 2 -->
-                    <div class="col-6 carousel-card-item">
-                      <div class="event-card">
-                        <img
-                          src="/img/bg.jpg"
-                          class="event-img"
-                          alt="Sự kiện 1"
-                        />
-                        <div class="event-body">
-                          <div
-                            class="event-header d-flex justify-content-between align-items-center"
-                          >
-                            <span class="event-date">02/06/2025</span>
-                            <button class="btn btn-register px-2 py-1">
-                              Đăng ký
-                            </button>
-                          </div>
-                          <div class="event-title">
-                            The Future of Marketing: Predictions for the Next 5
-                            Years
-                          </div>
-                          <div class="event-desc">
-                            Dự đoán xu hướng marketing và các công nghệ đột phá
-                            trong 5 năm tới...
-                          </div>
-                          <div class="event-category">
-                            <i class="fa-solid fa-tag"></i>
-                            NGHỆ THUẬT VÀ THIẾT KẾ
-                          </div>
-                        </div>
-                      </div>
+                    <div class="event-title">
+                      The Future of Marketing: Predictions for the Next 5 Years
+                    </div>
+                    <div class="event-desc">
+                      Dự đoán xu hướng marketing và các công nghệ đột phá trong
+                      5 năm tới...
+                    </div>
+                    <div class="event-category">
+                      <i class="fa-solid fa-tag"></i>
+                      NGHỆ THUẬT VÀ THIẾT KẾ
                     </div>
                   </div>
                 </div>
-                <!-- SLIDE 2 -->
-                <div class="carousel-item">
-                  <div class="row gx-3">
-                    <!-- CARD 1 -->
-                    <div class="col-6 carousel-card-item">
-                      <div class="event-card">
-                        <img
-                          src="/img/bg.jpg"
-                          class="event-img"
-                          alt="Sự kiện 1"
-                        />
-                        <div class="event-body">
-                          <div
-                            class="event-header d-flex justify-content-between align-items-center"
-                          >
-                            <span class="event-date">02/06/2025</span>
-                            <button class="btn btn-register px-2 py-1">
-                              Đăng ký
-                            </button>
-                          </div>
-                          <div class="event-title">
-                            The Future of Marketing: Predictions for the Next 5
-                            Years
-                          </div>
-                          <div class="event-desc">
-                            Dự đoán xu hướng marketing và các công nghệ đột phá
-                            trong 5 năm tới...
-                          </div>
-                          <div class="event-category">
-                            <i class="fa-solid fa-tag"></i>
-                            NGHỆ THUẬT VÀ THIẾT KẾ
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- CARD 2 -->
-                    <div class="col-6 carousel-card-item">
-                      <div class="event-card">
-                        <img
-                          src="/img/bg.jpg"
-                          class="event-img"
-                          alt="Sự kiện 1"
-                        />
-                        <div class="event-body">
-                          <div
-                            class="event-header d-flex justify-content-between align-items-center"
-                          >
-                            <span class="event-date">02/06/2025</span>
-                            <button class="btn btn-register px-2 py-1">
-                              Đăng ký
-                            </button>
-                          </div>
-                          <div class="event-title">
-                            The Future of Marketing: Predictions for the Next 5
-                            Years
-                          </div>
-                          <div class="event-desc">
-                            Dự đoán xu hướng marketing và các công nghệ đột phá
-                            trong 5 năm tới...
-                          </div>
-                          <div class="event-category">
-                            <i class="fa-solid fa-tag"></i>
-                            NGHỆ THUẬT VÀ THIẾT KẾ
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- DOTS -->
-              <div class="carousel-indicators custom-dots">
-                <button
-                  type="button"
-                  data-bs-target="#eventCarousel-mobile"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#eventCarousel-mobile"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
               </div>
             </div>
           </div>
@@ -1552,6 +1163,13 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       async
+    ></script>
+    <!-- jQuery -->
+    <script async src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     ></script>
     <!-- JS -->
     <script src="javacsript.js" async></script>
