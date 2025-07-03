@@ -3162,7 +3162,7 @@ ul.sub-menu {
   justify-content: space-evenly;
 }
 
-.navbar-collapse {
+.navbar-collapse-mobile {
   overflow-y: auto;
 }
 .uni-logo-mobile {
