@@ -206,8 +206,8 @@ $(document).ready(function () {
   });
   $("#owl-carousel-event").owlCarousel({
     loop: true,
-    nav: false,
     margin: 0,
+    nav: false,
     dots: false,
     autoplay: true,
     autoplayTimeout: 2000,
@@ -220,8 +220,8 @@ $(document).ready(function () {
   });
   $("#owl-carousel-news").owlCarousel({
     loop: true,
-    nav: false,
     margin: 0,
+    nav: false,
     dots: false,
     autoplay: true,
     autoplayTimeout: 2000,
