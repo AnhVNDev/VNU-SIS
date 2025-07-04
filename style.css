@@ -1860,6 +1860,7 @@ ul.sub-menu {
 .card-img-link {
   display: block;
   width: 100%;
+  max-height: calc(100vh - 300px);
   margin: 0 auto;
   overflow: hidden;
   box-shadow: 0 8px 30px #1739771b;
@@ -1904,7 +1905,6 @@ ul.sub-menu {
   .card-img-link,
   .card-img-container,
   .card-img-main {
-    border-radius: 16px;
     max-width: 100%;
   }
 }

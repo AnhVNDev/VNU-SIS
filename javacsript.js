@@ -207,15 +207,29 @@ $(document).ready(function () {
   $("#owl-carousel-event").owlCarousel({
     loop: true,
     nav: false,
-    margin: 10,
-    dots: true,
+    margin: 0,
+    dots: false,
     autoplay: true,
-    autoplayTimeout: 1000,
+    autoplayTimeout: 2000,
     autoplayHoverPause: true,
     responsive: {
       0: { items: 1 },
       600: { items: 2 },
       1000: { items: 4 },
+    },
+  });
+  $("#owl-carousel-news").owlCarousel({
+    loop: true,
+    nav: false,
+    margin: 0,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: { items: 1 },
+      600: { items: 1 },
+      1000: { items: 1 },
     },
   });
 });
