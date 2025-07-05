@@ -188,7 +188,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
 $(document).ready(function () {
   $("#owl-carousel-portal").owlCarousel({
     loop: true,
@@ -206,7 +205,7 @@ $(document).ready(function () {
   });
   $("#owl-carousel-event").owlCarousel({
     loop: true,
-    margin: 0,
+    margin: 10,
     nav: false,
     dots: false,
     autoplay: true,
@@ -217,6 +216,7 @@ $(document).ready(function () {
       600: { items: 2 },
       1000: { items: 4 },
     },
+    onChanged: updateCustomDots
   });
   $("#owl-carousel-news").owlCarousel({
     loop: true,
@@ -233,3 +233,17 @@ $(document).ready(function () {
     },
   });
 });
+
+$('.custom-dots .dot').click(function () {
+  const index = $(this).data('dot');
+  $("#owl-carousel-event").trigger('to.owl.carousel', [index, 300]);
+});
+
+function updateCustomDots(event) {
+  const index = event.item.index - event.relatedTarget._clones.length / 2;
+  const total = event.item.count;
+  const currentIndex = ((index % total) + total) % total; // để xử lý số âm do loop
+
+  $('.custom-dots .dot').removeClass('active');
+  $('.custom-dots .dot').eq(currentIndex).addClass('active');
+}
