@@ -2144,6 +2144,7 @@ ul.sub-menu {
 }
 
 .tab-filters-scroll-outer {
+  margin: 20px 0;
   width: 100%;
   overflow-x: auto;
   /* Ẩn scroll-bar mặc định, hiển thị scroll nhỏ hiện đại */
@@ -2152,6 +2153,7 @@ ul.sub-menu {
 }
 
 .tab-filters-wrap {
+  margin: 20px 0;
   display: flex;
   flex-wrap: nowrap;
   gap: 14px;
@@ -2301,9 +2303,9 @@ ul.sub-menu {
   margin-bottom: 3em;
 }
 
-.carousel-card-item{
+.carousel-card-item {
   margin: 0 8px;
-   aspect-ratio: 3 / 4;
+  aspect-ratio: 3 / 4;
 }
 
 .carousel-card-item:hover {
@@ -3162,11 +3164,11 @@ ul.sub-menu {
   display: none;
 }
 
-.eventCarousel-wrap-info-portal{
+.eventCarousel-wrap-info-portal {
   margin-bottom: 1rem;
 }
 
-.custom-dots-info-portal{
+.custom-dots-info-portal {
   bottom: -26px !important;
 }
 
@@ -3287,10 +3289,10 @@ ul.sub-menu {
   #eventCarousel-desktop {
     display: none;
   }
-  .principal-msg-wrap{
+  .principal-msg-wrap {
     padding: 0;
   }
-  .event-desc{
+  .event-desc {
     -webkit-line-clamp: 3;
   }
 }
@@ -3305,14 +3307,14 @@ ul.sub-menu {
   .uni-logo-mobile {
     display: block;
   }
-  .general-info-img{
+  .general-info-img {
     display: none;
   }
-  .edu-major-block{
+  .edu-major-block {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
-   .event-desc{
+  .event-desc {
     -webkit-line-clamp: 2;
   }
 }
