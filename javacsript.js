@@ -67,9 +67,39 @@ $(document).ready(function () {
   });
   $("#owl-carousel-event").owlCarousel({
     loop: true,
-    margin: 10,
+    margin: 0,
     nav: false,
-    dots: false,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: { items: 1 },
+      600: { items: 2 },
+      1000: { items: 4 },
+    },
+    onChanged: updateCustomDots,
+  });
+  $("#owl-carousel-event-1").owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: false,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: { items: 1 },
+      600: { items: 2 },
+      1000: { items: 4 },
+    },
+    onChanged: updateCustomDots,
+  });
+  $("#owl-carousel-event-2").owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: false,
+    dots: true,
     autoplay: true,
     autoplayTimeout: 2000,
     autoplayHoverPause: true,

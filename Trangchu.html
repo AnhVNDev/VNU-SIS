@@ -825,9 +825,27 @@
               <div
                 class="tab-filters-scroll-outer d-flex justify-content-center"
               >
-                <div class="tab-filters-wrap">
-                  <button class="tab-filter-btn active">Tất cả</button>
-                  <button class="tab-filter-btn">
+                <div class="tab-filters-wrap" role="tablist">
+                  <button
+                    class="tab-filter-btn active"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tab1"
+                    type="button"
+                    role="tab"
+                    aria-controls="tab1"
+                    aria-selected="true"
+                  >
+                    Tất cả
+                  </button>
+                  <button
+                    class="tab-filter-btn"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tab2"
+                    type="button"
+                    role="tab"
+                    aria-controls="tab2"
+                    aria-selected="true"
+                  >
                     Đề án tuyển sinh Đại học
                   </button>
                   <button class="tab-filter-btn">
@@ -840,179 +858,383 @@
                   </button>
                 </div>
               </div>
-              <div class="row p-4 padding-no">
-                <div class="col-lg-6 col-12">
-                  <div
-                    class="program-header-box d-flex align-items-center w-100"
-                  >
-                    <div
-                      class="icon-title-wrap d-flex align-items-center w-100"
-                    >
-                      <img
-                        src="/img/icon-orange.png"
-                        alt="icon"
-                        class="program-header-icon"
-                      />
-                      <div class="program-header-title-wrap">
-                        <span class="program-header-title"
-                          >TÌM HIỂU CHƯƠNG TRÌNH ĐẠI HỌC</span
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-12">
-                  <div
-                    class="program-header-box d-flex align-items-center w-100"
-                  >
-                    <div
-                      class="icon-title-wrap d-flex align-items-center w-100"
-                    >
-                      <img
-                        src="/img/icon-blue.png"
-                        alt="icon"
-                        class="program-header-icon"
-                      />
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="tab1"
+                  role="tabpanel"
+                >
+                  <div class="row p-4 padding-no">
+                    <div class="col-lg-6 col-12">
                       <div
-                        class="program-header-title-wrap program-header-title-wrap-blue"
+                        class="program-header-box d-flex align-items-center w-100"
                       >
-                        <span class="program-header-title"
-                          >TÌM HIỂU CHƯƠNG TRÌNH ĐẠI HỌC</span
+                        <div
+                          class="icon-title-wrap d-flex align-items-center w-100"
                         >
+                          <img
+                            src="/img/icon-orange.png"
+                            alt="icon"
+                            class="program-header-icon"
+                          />
+                          <div class="program-header-title-wrap">
+                            <span class="program-header-title"
+                              >TÌM HIỂU CHƯƠNG TRÌNH ĐẠI HỌC</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                      <div
+                        class="program-header-box d-flex align-items-center w-100"
+                      >
+                        <div
+                          class="icon-title-wrap d-flex align-items-center w-100"
+                        >
+                          <img
+                            src="/img/icon-blue.png"
+                            alt="icon"
+                            class="program-header-icon"
+                          />
+                          <div
+                            class="program-header-title-wrap program-header-title-wrap-blue"
+                          >
+                            <span class="program-header-title"
+                              >TÌM HIỂU CHƯƠNG TRÌNH ĐẠI HỌC</span
+                            >
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="row mt-1">
-                <div class="col-lg-6 col-12">
-                  <div class="training-block gx-0 align-items-stretch mb-4">
-                    <!-- Label bên trái -->
-                    <div class="label-training-col d-flex">
-                      <div class="label-training w-100 d-flex flex-column">
-                        <div>LIÊN</div>
+                  <div class="row mt-1">
+                    <div class="col-lg-6 col-12">
+                      <div class="training-block gx-0 align-items-stretch mb-4">
+                        <!-- Label bên trái -->
+                        <div class="label-training-col d-flex">
+                          <div class="label-training w-100 d-flex flex-column">
+                            <div>LIÊN</div>
 
-                        <div>NGÀNH</div>
+                            <div>NGÀNH</div>
+                          </div>
+                        </div>
+                        <!-- Danh sách chương trình bên phải -->
+                        <div class="content-col w-100">
+                          <div
+                            class="block-content h-100 d-flex flex-column justify-content-center"
+                          >
+                            <a href="#" class="training-link"
+                              >Quản trị thương hiệu</a
+                            >
+                            <a href="#" class="training-link"
+                              >Quản trị tài nguyên di sản</a
+                            >
+                            <a href="#" class="training-link"
+                              >Quản lý giải trí và sự kiện</a
+                            >
+                            <a href="#" class="training-link"
+                              >Quản trị đô thị thông minh và bền vững</a
+                            >
+                            <a href="#" class="training-link"
+                              >Công nghệ truyền thông</a
+                            >
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <!-- Danh sách chương trình bên phải -->
-                    <div class="content-col w-100">
+                    <div class="col-lg-6 col-12">
                       <div
-                        class="block-content h-100 d-flex flex-column justify-content-center"
+                        class="program-block-ths gx-0 align-items-stretch mb-4 w-100"
                       >
-                        <a href="#" class="training-link"
-                          >Quản trị thương hiệu</a
+                        <!-- Danh sách chương trình bên trái -->
+                        <div
+                          class="program-ths-list-col d-flex align-items-center"
                         >
-                        <a href="#" class="training-link"
-                          >Quản trị tài nguyên di sản</a
-                        >
-                        <a href="#" class="training-link"
-                          >Quản lý giải trí và sự kiện</a
-                        >
-                        <a href="#" class="training-link"
-                          >Quản trị đô thị thông minh và bền vững</a
-                        >
-                        <a href="#" class="training-link"
-                          >Công nghệ truyền thông</a
-                        >
+                          <div class="program-ths-list w-100 text-end">
+                            <a href="#" class="program-ths-link">Di sản học</a>
+                            <a href="#" class="program-ths-link"
+                              >Biến đổi khí hậu</a
+                            >
+                            <a href="#" class="program-ths-link"
+                              >Khoa học bền vững</a
+                            >
+                            <a href="#" class="program-ths-link"
+                              >Quản lý phát triển đô thị</a
+                            >
+                            <a href="#" class="program-ths-link"
+                              >Công nghiệp văn hóa và sáng tạo</a
+                            >
+                          </div>
+                        </div>
+                        <!-- Label Thạc sĩ bên phải -->
+                        <div class="program-ths-label-col d-flex">
+                          <div
+                            class="program-ths-label w-100 d-flex flex-column"
+                          >
+                            <div>THẠC</div>
+                            <div>SĨ</div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-lg-6 col-12">
-                  <div
-                    class="program-block-ths gx-0 align-items-stretch mb-4 w-100"
-                  >
-                    <!-- Danh sách chương trình bên trái -->
-                    <div class="program-ths-list-col d-flex align-items-center">
-                      <div class="program-ths-list w-100 text-end">
-                        <a href="#" class="program-ths-link">Di sản học</a>
-                        <a href="#" class="program-ths-link"
-                          >Biến đổi khí hậu</a
-                        >
-                        <a href="#" class="program-ths-link"
-                          >Khoa học bền vững</a
-                        >
-                        <a href="#" class="program-ths-link"
-                          >Quản lý phát triển đô thị</a
-                        >
-                        <a href="#" class="program-ths-link"
-                          >Công nghiệp văn hóa và sáng tạo</a
-                        >
-                      </div>
-                    </div>
-                    <!-- Label Thạc sĩ bên phải -->
-                    <div class="program-ths-label-col d-flex">
-                      <div class="program-ths-label w-100 d-flex flex-column">
-                        <div>THẠC</div>
-                        <div>SĨ</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row mt-1">
-                <div class="col-lg-6 col-12">
-                  <div class="training-block gx-0 align-items-stretch mb-4">
-                    <!-- Label bên trái -->
-                    <div class="label-training-col d-flex">
-                      <div class="label-training w-100 d-flex flex-column">
-                        <div>NGHỆ</div>
+                  <div class="row mt-1">
+                    <div class="col-lg-6 col-12">
+                      <div class="training-block gx-0 align-items-stretch mb-4">
+                        <!-- Label bên trái -->
+                        <div class="label-training-col d-flex">
+                          <div class="label-training w-100 d-flex flex-column">
+                            <div>NGHỆ</div>
 
-                        <div>THUẬT</div>
+                            <div>THUẬT</div>
+                          </div>
+                        </div>
+                        <!-- Danh sách chương trình bên phải -->
+                        <div class="content-col w-100">
+                          <div
+                            class="block-content h-100 d-flex flex-column justify-content-center"
+                          >
+                            <a href="#" class="training-link"
+                              >Quản trị thương hiệu</a
+                            >
+                            <a href="#" class="training-link"
+                              >Quản trị tài nguyên di sản</a
+                            >
+                            <a href="#" class="training-link"
+                              >Quản lý giải trí và sự kiện</a
+                            >
+                            <a href="#" class="training-link"
+                              >Quản trị đô thị thông minh và bền vững</a
+                            >
+                            <a href="#" class="training-link"
+                              >Công nghệ truyền thông</a
+                            >
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <!-- Danh sách chương trình bên phải -->
-                    <div class="content-col w-100">
+                    <div class="col-lg-6 col-12">
                       <div
-                        class="block-content h-100 d-flex flex-column justify-content-center"
+                        class="program-block-ths gx-0 align-items-stretch mb-4 w-100"
                       >
-                        <a href="#" class="training-link"
-                          >Quản trị thương hiệu</a
+                        <!-- Danh sách chương trình bên trái -->
+                        <div
+                          class="program-ths-list-col d-flex align-items-center"
                         >
-                        <a href="#" class="training-link"
-                          >Quản trị tài nguyên di sản</a
-                        >
-                        <a href="#" class="training-link"
-                          >Quản lý giải trí và sự kiện</a
-                        >
-                        <a href="#" class="training-link"
-                          >Quản trị đô thị thông minh và bền vững</a
-                        >
-                        <a href="#" class="training-link"
-                          >Công nghệ truyền thông</a
-                        >
+                          <div class="program-ths-list w-100 text-end">
+                            <a href="#" class="program-ths-link">Di sản học</a>
+                            <a href="#" class="program-ths-link"
+                              >Biến đổi khí hậu</a
+                            >
+                            <a href="#" class="program-ths-link"
+                              >Khoa học bền vững</a
+                            >
+                            <a href="#" class="program-ths-link"
+                              >Quản lý phát triển đô thị</a
+                            >
+                            <a href="#" class="program-ths-link"
+                              >Công nghiệp văn hóa và sáng tạo</a
+                            >
+                          </div>
+                        </div>
+                        <!-- Label Thạc sĩ bên phải -->
+                        <div class="program-ths-label-col d-flex">
+                          <div
+                            class="program-ths-label w-100 d-flex flex-column"
+                          >
+                            <div>TIẾN</div>
+                            <div>SĨ</div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6 col-12">
-                  <div
-                    class="program-block-ths gx-0 align-items-stretch mb-4 w-100"
-                  >
-                    <!-- Danh sách chương trình bên trái -->
-                    <div class="program-ths-list-col d-flex align-items-center">
-                      <div class="program-ths-list w-100 text-end">
-                        <a href="#" class="program-ths-link">Di sản học</a>
-                        <a href="#" class="program-ths-link"
-                          >Biến đổi khí hậu</a
+                <div class="tab-pane fade" id="tab2" role="tabpanel">
+                  <div class="row p-4 padding-no">
+                    <div class="col-lg-6 col-12">
+                      <div
+                        class="program-header-box d-flex align-items-center w-100"
+                      >
+                        <div
+                          class="icon-title-wrap d-flex align-items-center w-100"
                         >
-                        <a href="#" class="program-ths-link"
-                          >Khoa học bền vững</a
-                        >
-                        <a href="#" class="program-ths-link"
-                          >Quản lý phát triển đô thị</a
-                        >
-                        <a href="#" class="program-ths-link"
-                          >Công nghiệp văn hóa và sáng tạo</a
-                        >
+                          <img
+                            src="/img/icon-orange.png"
+                            alt="icon"
+                            class="program-header-icon"
+                          />
+                          <div class="program-header-title-wrap">
+                            <span class="program-header-title"
+                              >TÌM HIỂU CHƯƠNG TRÌNH ĐẠI HỌC 2</span
+                            >
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <!-- Label Thạc sĩ bên phải -->
-                    <div class="program-ths-label-col d-flex">
-                      <div class="program-ths-label w-100 d-flex flex-column">
-                        <div>TIẾN</div>
-                        <div>SĨ</div>
+                    <div class="col-lg-6 col-12">
+                      <div
+                        class="program-header-box d-flex align-items-center w-100"
+                      >
+                        <div
+                          class="icon-title-wrap d-flex align-items-center w-100"
+                        >
+                          <img
+                            src="/img/icon-blue.png"
+                            alt="icon"
+                            class="program-header-icon"
+                          />
+                          <div
+                            class="program-header-title-wrap program-header-title-wrap-blue"
+                          >
+                            <span class="program-header-title"
+                              >TÌM HIỂU CHƯƠNG TRÌNH ĐẠI HỌC 2</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mt-1">
+                    <div class="col-lg-6 col-12">
+                      <div class="training-block gx-0 align-items-stretch mb-4">
+                        <!-- Label bên trái -->
+                        <div class="label-training-col d-flex">
+                          <div class="label-training w-100 d-flex flex-column">
+                            <div>LIÊN</div>
+
+                            <div>NGÀNH</div>
+                          </div>
+                        </div>
+                        <!-- Danh sách chương trình bên phải -->
+                        <div class="content-col w-100">
+                          <div
+                            class="block-content h-100 d-flex flex-column justify-content-center"
+                          >
+                            <a href="#" class="training-link"
+                              >Quản trị thương hiệu</a
+                            >
+                            <a href="#" class="training-link"
+                              >Quản trị tài nguyên di sản</a
+                            >
+                            <a href="#" class="training-link"
+                              >Quản lý giải trí và sự kiện</a
+                            >
+                            <a href="#" class="training-link"
+                              >Quản trị đô thị thông minh và bền vững</a
+                            >
+                            <a href="#" class="training-link"
+                              >Công nghệ truyền thông</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                      <div
+                        class="program-block-ths gx-0 align-items-stretch mb-4 w-100"
+                      >
+                        <!-- Danh sách chương trình bên trái -->
+                        <div
+                          class="program-ths-list-col d-flex align-items-center"
+                        >
+                          <div class="program-ths-list w-100 text-end">
+                            <a href="#" class="program-ths-link">Di sản học</a>
+                            <a href="#" class="program-ths-link"
+                              >Biến đổi khí hậu</a
+                            >
+                            <a href="#" class="program-ths-link"
+                              >Khoa học bền vững</a
+                            >
+                            <a href="#" class="program-ths-link"
+                              >Quản lý phát triển đô thị</a
+                            >
+                            <a href="#" class="program-ths-link"
+                              >Công nghiệp văn hóa và sáng tạo</a
+                            >
+                          </div>
+                        </div>
+                        <!-- Label Thạc sĩ bên phải -->
+                        <div class="program-ths-label-col d-flex">
+                          <div
+                            class="program-ths-label w-100 d-flex flex-column"
+                          >
+                            <div>THẠC</div>
+                            <div>SĨ</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mt-1">
+                    <div class="col-lg-6 col-12">
+                      <div class="training-block gx-0 align-items-stretch mb-4">
+                        <!-- Label bên trái -->
+                        <div class="label-training-col d-flex">
+                          <div class="label-training w-100 d-flex flex-column">
+                            <div>NGHỆ</div>
+
+                            <div>THUẬT</div>
+                          </div>
+                        </div>
+                        <!-- Danh sách chương trình bên phải -->
+                        <div class="content-col w-100">
+                          <div
+                            class="block-content h-100 d-flex flex-column justify-content-center"
+                          >
+                            <a href="#" class="training-link"
+                              >Quản trị thương hiệu</a
+                            >
+                            <a href="#" class="training-link"
+                              >Quản trị tài nguyên di sản</a
+                            >
+                            <a href="#" class="training-link"
+                              >Quản lý giải trí và sự kiện</a
+                            >
+                            <a href="#" class="training-link"
+                              >Quản trị đô thị thông minh và bền vững</a
+                            >
+                            <a href="#" class="training-link"
+                              >Công nghệ truyền thông</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                      <div
+                        class="program-block-ths gx-0 align-items-stretch mb-4 w-100"
+                      >
+                        <!-- Danh sách chương trình bên trái -->
+                        <div
+                          class="program-ths-list-col d-flex align-items-center"
+                        >
+                          <div class="program-ths-list w-100 text-end">
+                            <a href="#" class="program-ths-link">Di sản học</a>
+                            <a href="#" class="program-ths-link"
+                              >Biến đổi khí hậu</a
+                            >
+                            <a href="#" class="program-ths-link"
+                              >Khoa học bền vững</a
+                            >
+                            <a href="#" class="program-ths-link"
+                              >Quản lý phát triển đô thị</a
+                            >
+                            <a href="#" class="program-ths-link"
+                              >Công nghiệp văn hóa và sáng tạo</a
+                            >
+                          </div>
+                        </div>
+                        <!-- Label Thạc sĩ bên phải -->
+                        <div class="program-ths-label-col d-flex">
+                          <div
+                            class="program-ths-label w-100 d-flex flex-column"
+                          >
+                            <div>TIẾN</div>
+                            <div>SĨ</div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1029,9 +1251,27 @@
               <div
                 class="tab-filters-scroll-outer d-flex justify-content-center"
               >
-                <div class="tab-filters-wrap">
-                  <button class="tab-filter-btn active">Tất cả</button>
-                  <button class="tab-filter-btn">
+                <div class="tab-filters-wrap" role="tablist">
+                  <button
+                    class="tab-filter-btn active"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tab-event-1"
+                    type="button"
+                    role="tab"
+                    aria-controls="tab-event-1"
+                    aria-selected="true"
+                  >
+                    Tất cả
+                  </button>
+                  <button
+                    class="tab-filter-btn"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tab-event-2"
+                    type="button"
+                    role="tab"
+                    aria-controls="tab-event-2"
+                    aria-selected="true"
+                  >
                     Đề án tuyển sinh Đại học
                   </button>
                   <button class="tab-filter-btn">
@@ -1044,66 +1284,143 @@
                   </button>
                 </div>
               </div>
-              <div id="owl-carousel-event" class="owl-carousel mt-2">
-                <div class="carousel-card-item">
-                  <div class="event-card">
-                    <img src="/img/bg.jpg" class="event-img" alt="Sự kiện 1" />
-                    <div class="event-body">
-                      <div
-                        class="event-header d-flex justify-content-between align-items-center"
-                      >
-                        <span class="event-date">02/06/2025</span>
-                        <button class="btn btn-register px-2 py-1">
-                          Đăng ký
-                        </button>
+              <div class="tab-content" id="myTabContent-event">
+                <div
+                  class="tab-pane fade show active"
+                  id="tab-event-1"
+                  role="tabpanel"
+                >
+                  <div id="owl-carousel-event-1" class="owl-carousel mt-2">
+                    <div class="carousel-card-item carousel-card-item-vertical">
+                      <div class="event-card">
+                        <img
+                          src="/img/bg.jpg"
+                          class="event-img"
+                          alt="Sự kiện 1"
+                        />
+                        <div class="event-body">
+                          <div
+                            class="event-header d-flex justify-content-between align-items-center"
+                          >
+                            <span class="event-date">02/06/2025</span>
+                            <button class="btn btn-register px-2 py-1">
+                              Đăng ký
+                            </button>
+                          </div>
+                          <div class="event-title">
+                            The Future of Marketing: Predictions for the Next 5
+                            Years
+                          </div>
+                          <div class="event-desc">
+                            Dự đoán xu hướng marketing và các công nghệ đột phá
+                            trong 5 năm tới...
+                          </div>
+                          <div class="event-category">
+                            <i class="fa-solid fa-tag"></i>
+                            NGHỆ THUẬT VÀ THIẾT KẾ
+                          </div>
+                        </div>
                       </div>
-                      <div class="event-title">
-                        The Future of Marketing: Predictions for the Next 5
-                        Years
-                      </div>
-                      <div class="event-desc">
-                        Dự đoán xu hướng marketing và các công nghệ đột phá
-                        trong 5 năm tới...
-                      </div>
-                      <div class="event-category">
-                        <i class="fa-solid fa-tag"></i>
-                        NGHỆ THUẬT VÀ THIẾT KẾ
+                    </div>
+                    <div class="carousel-card-item carousel-card-item-vertical">
+                      <div class="event-card">
+                        <img
+                          src="/img/bg.jpg"
+                          class="event-img"
+                          alt="Sự kiện 1"
+                        />
+                        <div class="event-body">
+                          <div
+                            class="event-header d-flex justify-content-between align-items-center"
+                          >
+                            <span class="event-date">02/06/2025</span>
+                            <button class="btn btn-register px-2 py-1">
+                              Đăng ký
+                            </button>
+                          </div>
+                          <div class="event-title">
+                            The Future of Marketing: Predictions for the Next 5
+                            Years
+                          </div>
+                          <div class="event-desc">
+                            Dự đoán xu hướng marketing và các công nghệ đột phá
+                            trong 5 năm tới...
+                          </div>
+                          <div class="event-category">
+                            <i class="fa-solid fa-tag"></i>
+                            NGHỆ THUẬT VÀ THIẾT KẾ
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="carousel-card-item">
-                  <div class="event-card">
-                    <img src="/img/bg.jpg" class="event-img" alt="Sự kiện 1" />
-                    <div class="event-body">
-                      <div
-                        class="event-header d-flex justify-content-between align-items-center"
-                      >
-                        <span class="event-date">02/06/2025</span>
-                        <button class="btn btn-register px-2 py-1">
-                          Đăng ký
-                        </button>
+                <div class="tab-pane fade" id="tab-event-2" role="tabpanel">
+                  <div id="owl-carousel-event-2" class="owl-carousel mt-2">
+                    <div class="carousel-card-item carousel-card-item-vertical">
+                      <div class="event-card">
+                        <img
+                          src="/img/bg.jpg"
+                          class="event-img"
+                          alt="Sự kiện 1"
+                        />
+                        <div class="event-body">
+                          <div
+                            class="event-header d-flex justify-content-between align-items-center"
+                          >
+                            <span class="event-date">02/06/2025</span>
+                            <button class="btn btn-register px-2 py-1">
+                              Đăng ký
+                            </button>
+                          </div>
+                          <div class="event-title">
+                            The Future of Marketing: Predictions for the Next 5
+                            Years 2
+                          </div>
+                          <div class="event-desc">
+                            Dự đoán xu hướng marketing và các công nghệ đột phá
+                            trong 5 năm tới...
+                          </div>
+                          <div class="event-category">
+                            <i class="fa-solid fa-tag"></i>
+                            NGHỆ THUẬT VÀ THIẾT KẾ
+                          </div>
+                        </div>
                       </div>
-                      <div class="event-title">
-                        The Future of Marketing: Predictions for the Next 5
-                        Years
-                      </div>
-                      <div class="event-desc">
-                        Dự đoán xu hướng marketing và các công nghệ đột phá
-                        trong 5 năm tới...
-                      </div>
-                      <div class="event-category">
-                        <i class="fa-solid fa-tag"></i>
-                        NGHỆ THUẬT VÀ THIẾT KẾ
+                    </div>
+                    <div class="carousel-card-item carousel-card-item-vertical">
+                      <div class="event-card">
+                        <img
+                          src="/img/bg.jpg"
+                          class="event-img"
+                          alt="Sự kiện 1"
+                        />
+                        <div class="event-body">
+                          <div
+                            class="event-header d-flex justify-content-between align-items-center"
+                          >
+                            <span class="event-date">02/06/2025</span>
+                            <button class="btn btn-register px-2 py-1">
+                              Đăng ký
+                            </button>
+                          </div>
+                          <div class="event-title">
+                            The Future of Marketing: Predictions for the Next 5
+                            Years
+                          </div>
+                          <div class="event-desc">
+                            Dự đoán xu hướng marketing và các công nghệ đột phá
+                            trong 5 năm tới...
+                          </div>
+                          <div class="event-category">
+                            <i class="fa-solid fa-tag"></i>
+                            NGHỆ THUẬT VÀ THIẾT KẾ
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="custom-dots">
-                <button class="dot" data-dot="0"></button>
-                <button class="dot" data-dot="1"></button>
-                <button class="dot" data-dot="2"></button>
               </div>
             </div>
           </section>
@@ -1113,7 +1430,7 @@
           <div
             class="container-fluid p-4 partner-img-view"
             style="
-              background-image: url('img/bg.jpg');
+              background-image: url('img/bg-f.jpg');
               background-size: cover;
               background-position: center;
             "
