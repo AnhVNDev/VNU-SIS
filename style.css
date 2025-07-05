@@ -2322,7 +2322,7 @@ ul.sub-menu {
 
 .partner-img-view {
   width: 100%;
-  min-height: 500px;
+  min-height: 400px;
   max-height: calc(100vh - 300px);
 }
 
@@ -3272,6 +3272,28 @@ ul.sub-menu {
 #owl-carousel-event-3 .owl-dot.active {
   background-color: #ffab32;
 }
+.cop-img-link {
+  display: inline-block;
+}
+.cop-img {
+  max-height: 200px;
+  max-width: 200px;
+  object-fit: cover;
+}
+
+.cop-img:hover{
+  scale: 1.2;
+}
+
+#owl-carousel-cop {
+  margin-top: 20px;
+  padding: 0 40px;
+}
+
+#owl-carousel-cop .owl-item {
+  display: flex;
+  justify-content: center;
+}
 /* responsive-mobile-tablet */
 @media (max-width: 1024px) {
   .nav-item {
@@ -3446,3 +3468,5 @@ ul.sub-menu {
 .phudu {
   font-family: "PhuDu", sans-serif;
 }
+
+
