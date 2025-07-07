@@ -349,40 +349,92 @@
         <section class="p-0 position-relative">
           <div class="container-fluid">
             <div class="row">
-              <div
-                class="quick-content-wrap col-lg-9 col-12 mb-4 mb-lg-0 h-500 text-white"
-                style="
-                  background-image: url('img/bg.jpg');
-                  background-size: cover;
-                  background-position: center;
-                "
-              >
-                <h2 class="display-5 fw-bold">
-                  TRƯỜNG KHOA HỌC LIÊN NGÀNH VÀ NGHỆ THUẬT
-                </h2>
-                <div class="lead-text bold-500">
-                  <div class="lead-sub-text">Tinh thần khai phóng</div>
-                  <div class="lead-sub-text">Tư duy liên ngành</div>
-                  <div class="lead-sub-text">Tầm nhìn toàn cầu</div>
-                </div>
-                <button
-                  class="btn custom-btn d-flex align-items-center px-3 py-2 bg-primary-btn"
+              <div class="col-lg-9 col-12 mb-4 mb-lg-0">
+                <div
+                  id="owl-carousel-quick-content"
+                  class="owl-carousel row g-0 text-start"
                 >
-                  <span
-                    class="flex-grow-1 text-start"
-                    style="color: #f4af22; font-weight: 500"
+                  <div
+                    class="quick-content-wrap text-white h-500"
+                    style="
+                      background-image: url('img/bg.jpg');
+                      background-size: cover;
+                      background-position: center;
+                    "
                   >
-                    Thông điệp của Hiệu trưởng
-                  </span>
-                  <span
-                    class="icon-bg d-flex align-items-center justify-content-center ms-2 btn-content-icon"
+                    <h2 class="display-5 fw-bold">
+                      TRƯỜNG KHOA HỌC LIÊN NGÀNH VÀ NGHỆ THUẬT
+                    </h2>
+                    <div class="lead-text bold-500">
+                      <div class="lead-sub-text">Tinh thần khai phóng</div>
+                      <div class="lead-sub-text">Tư duy liên ngành</div>
+                      <div class="lead-sub-text">Tầm nhìn toàn cầu</div>
+                    </div>
+                    <button
+                      class="btn custom-btn d-flex align-items-center px-3 py-2 bg-primary-btn"
+                    >
+                      <span
+                        class="flex-grow-1 text-start"
+                        style="color: #f4af22; font-weight: 500"
+                      >
+                        Thông điệp của Hiệu trưởng
+                      </span>
+                      <span
+                        class="icon-bg d-flex align-items-center justify-content-center ms-2 btn-content-icon"
+                      >
+                        <svg
+                          width="32"
+                          height="24"
+                          viewBox="0 0 32 24"
+                          fill="none"
+                        >
+                          <polygon points="0,0 16,12 0,24" fill="#f4af22" />
+                          <polygon points="16,0 32,12 16,24" fill="#f4af22" />
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                  <div
+                    class="quick-content-wrap text-white h-500"
+                    style="
+                      background-image: url('img/bg.jpg');
+                      background-size: cover;
+                      background-position: center;
+                    "
                   >
-                    <svg width="32" height="24" viewBox="0 0 32 24" fill="none">
-                      <polygon points="0,0 16,12 0,24" fill="#f4af22" />
-                      <polygon points="16,0 32,12 16,24" fill="#f4af22" />
-                    </svg>
-                  </span>
-                </button>
+                    <h2 class="display-5 fw-bold">
+                      TRƯỜNG KHOA HỌC LIÊN NGÀNH VÀ NGHỆ THUẬT 2
+                    </h2>
+                    <div class="lead-text bold-500">
+                      <div class="lead-sub-text">Tinh thần khai phóng</div>
+                      <div class="lead-sub-text">Tư duy liên ngành</div>
+                      <div class="lead-sub-text">Tầm nhìn toàn cầu</div>
+                    </div>
+                    <button
+                      class="btn custom-btn d-flex align-items-center px-3 py-2 bg-primary-btn"
+                    >
+                      <span
+                        class="flex-grow-1 text-start"
+                        style="color: #f4af22; font-weight: 500"
+                      >
+                        Thông điệp của Hiệu trưởng
+                      </span>
+                      <span
+                        class="icon-bg d-flex align-items-center justify-content-center ms-2 btn-content-icon"
+                      >
+                        <svg
+                          width="32"
+                          height="24"
+                          viewBox="0 0 32 24"
+                          fill="none"
+                        >
+                          <polygon points="0,0 16,12 0,24" fill="#f4af22" />
+                          <polygon points="16,0 32,12 16,24" fill="#f4af22" />
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                </div>
               </div>
               <!-- Right: Image + Info -->
               <div
@@ -428,36 +480,174 @@
                     style="gap: 12px; width: 480px; justify-content: center"
                   >
                     <div
-                      class="grid-box border-green rounded-top-left position-relative"
+                      class="grid-box border-green rounded-top-left position-relative dropdown"
                     >
-                      KHOA CÔNG NGHIỆP VĂN HÓA VÀ DI SẢN
+                      <a href="" class="text-decoration-none link-cus"
+                        >KHOA CÔNG NGHIỆP VĂN HÓA VÀ DI SẢN</a
+                      >
                       <div
                         class="quarter-circle top-left quarter-circle-green"
                       ></div>
+                      <div class="dropdown-menu dropdown-menu-link-cus">
+                        <ul class="menu-khoa">
+                          <li class="menu-khoa-item">
+                            <a
+                              class="menu-khoa-link menu-khoa-link-cctc"
+                              href="#"
+                              >Cơ cấu tổ chức Khoa</a
+                            >
+                          </li>
+                          <li class="menu-khoa-item">
+                            <a
+                              class="menu-khoa-link menu-khoa-link-ctdt"
+                              href="#"
+                              >Các CTĐT của Khoa</a
+                            >
+                          </li>
+                          <li class="menu-khoa-item">
+                            <a
+                              class="menu-khoa-link menu-khoa-link-hdnb"
+                              href="#"
+                              >Hoạt động nổi bật của Khoa</a
+                            >
+                          </li>
+                          <li class="menu-khoa-item">
+                            <a
+                              class="menu-khoa-link menu-khoa-link-ttlh"
+                              href="#"
+                              >Thông tin liên hệ</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                     <div
-                      class="grid-box border-pink rounded-top-right position-relative"
+                      class="grid-box border-pink rounded-top-right position-relative dropdown"
                     >
-                      KHOA NGHỆ THUẬT VÀ THIẾT KẾ
+                      <a href="" class="text-decoration-none link-cus"
+                        >KHOA NGHỆ THUẬT VÀ THIẾT KẾ</a
+                      >
                       <div
                         class="quarter-circle top-right quarter-circle-pink"
                       ></div>
+                      <div class="dropdown-menu dropdown-menu-link-cus">
+                        <ul class="menu-khoa">
+                          <li class="menu-khoa-item">
+                            <a
+                              class="menu-khoa-link menu-khoa-link-cctc"
+                              href="#"
+                              >Cơ cấu tổ chức Khoa</a
+                            >
+                          </li>
+                          <li class="menu-khoa-item">
+                            <a
+                              class="menu-khoa-link menu-khoa-link-ctdt"
+                              href="#"
+                              >Các CTĐT của Khoa</a
+                            >
+                          </li>
+                          <li class="menu-khoa-item">
+                            <a
+                              class="menu-khoa-link menu-khoa-link-hdnb"
+                              href="#"
+                              >Hoạt động nổi bật của Khoa</a
+                            >
+                          </li>
+                          <li class="menu-khoa-item">
+                            <a
+                              class="menu-khoa-link menu-khoa-link-ttlh"
+                              href="#"
+                              >Thông tin liên hệ</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                     <div
-                      class="grid-box border-navy rounded-bottom-left position-relative"
+                      class="grid-box border-navy rounded-bottom-left position-relative dropdown"
                     >
-                      KHOA QUẢN TRỊ VÀ KINH TẾ SÁNG TẠO
+                      <a href="" class="text-decoration-none link-cus"
+                        >KHOA QUẢN TRỊ VÀ KINH TẾ SÁNG TẠO</a
+                      >
+
                       <div
                         class="quarter-circle bottom-left quarter-circle-navy"
                       ></div>
+                      <div class="dropdown-menu dropdown-menu-link-cus dropdown-menu-link-cus-bottom">
+                        <ul class="menu-khoa">
+                          <li class="menu-khoa-item">
+                            <a
+                              class="menu-khoa-link menu-khoa-link-cctc"
+                              href="#"
+                              >Cơ cấu tổ chức Khoa</a
+                            >
+                          </li>
+                          <li class="menu-khoa-item">
+                            <a
+                              class="menu-khoa-link menu-khoa-link-ctdt"
+                              href="#"
+                              >Các CTĐT của Khoa</a
+                            >
+                          </li>
+                          <li class="menu-khoa-item">
+                            <a
+                              class="menu-khoa-link menu-khoa-link-hdnb"
+                              href="#"
+                              >Hoạt động nổi bật của Khoa</a
+                            >
+                          </li>
+                          <li class="menu-khoa-item">
+                            <a
+                              class="menu-khoa-link menu-khoa-link-ttlh"
+                              href="#"
+                              >Thông tin liên hệ</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                     <div
-                      class="grid-box border-orange rounded-bottom-right position-relative"
+                      class="grid-box border-orange rounded-bottom-right position-relative dropdown"
                     >
-                      KHOA KIẾN TRÚC, ĐÔ THỊ VÀ KHOA HỌC BỀN VỮNG
+                      <a href="" class="text-decoration-none link-cus">
+                        KHOA KIẾN TRÚC, ĐÔ THỊ VÀ KHOA HỌC BỀN VỮNG</a
+                      >
+
                       <div
                         class="quarter-circle bottom-right quarter-circle-orange"
                       ></div>
+                      <div class="dropdown-menu dropdown-menu-link-cus dropdown-menu-link-cus-bottom">
+                        <ul class="menu-khoa">
+                          <li class="menu-khoa-item">
+                            <a
+                              class="menu-khoa-link menu-khoa-link-cctc"
+                              href="#"
+                              >Cơ cấu tổ chức Khoa</a
+                            >
+                          </li>
+                          <li class="menu-khoa-item">
+                            <a
+                              class="menu-khoa-link menu-khoa-link-ctdt"
+                              href="#"
+                              >Các CTĐT của Khoa</a
+                            >
+                          </li>
+                          <li class="menu-khoa-item">
+                            <a
+                              class="menu-khoa-link menu-khoa-link-hdnb"
+                              href="#"
+                              >Hoạt động nổi bật của Khoa</a
+                            >
+                          </li>
+                          <li class="menu-khoa-item">
+                            <a
+                              class="menu-khoa-link menu-khoa-link-ttlh"
+                              href="#"
+                              >Thông tin liên hệ</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                   <!-- Logo center -->
