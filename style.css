@@ -1860,7 +1860,6 @@ ul.sub-menu {
 .card-img-link {
   display: block;
   width: 100%;
-  max-height: calc(100vh - 300px);
   margin: 0 auto;
   overflow: hidden;
   box-shadow: 0 8px 30px #1739771b;
@@ -2210,6 +2209,10 @@ ul.sub-menu {
   border-radius: 10px;
 }
 
+.tab-filters-events{
+  margin-bottom: 150px;
+}
+
 /* Responsive nhỏ hơn */
 @media (max-width: 900px) {
   .tab-filter-btn {
@@ -2307,7 +2310,7 @@ ul.sub-menu {
   margin: 0 8px;
 }
 .carousel-card-item-vertical {
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 5 / 7;
 }
 
 .carousel-card-item:hover {
@@ -3451,6 +3454,10 @@ ul.sub-menu {
 
   .dropdown-menu-portal {
     position: absolute;
+  }
+
+  .tab-filters-event{
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 600px) {
