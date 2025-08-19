@@ -2209,7 +2209,7 @@ ul.sub-menu {
   border-radius: 10px;
 }
 
-.tab-filters-events{
+.tab-filters-events {
   margin-bottom: 150px;
 }
 
@@ -3456,7 +3456,7 @@ ul.sub-menu {
     position: absolute;
   }
 
-  .tab-filters-event{
+  .tab-filters-event {
     margin-bottom: 30px;
   }
 }
@@ -3537,4 +3537,16 @@ ul.sub-menu {
 
 .link-cus:hover {
   color: #fbb349;
+}
+
+/* Co chiều rộng trang */
+.content-page {
+  width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .content-page {
+    width: 100% !important;
+    margin: unset !important;
+  }
 }
