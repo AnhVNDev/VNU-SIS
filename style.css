@@ -3540,12 +3540,51 @@ ul.sub-menu {
 }
 
 /* Co chiều rộng trang */
-.content-page {
-  width: 80%;
-  margin: 0 auto;
+.principal-msg-wrap,
+.general-info-wrap,
+.unit-member,
+.info-block-row,
+.member-sis-wrap,
+.programs-sis-wrap,
+.event-unit-wrap,
+.unit-intro,
+.unit-member,
+.training-programs,
+.event-unit-wrap,
+.contact-wrap,
+.wrap-intro,
+.wrap-news,
+.admission-wrap,
+.wrap-event,
+.co-partner-wrap,
+.news-wrap,
+.page-edu {
+  width: 80% !important;
+  margin: 0 auto !important;
+}
+.event-unit-wrap {
+  margin-top: 40px !important;
 }
 @media (max-width: 1024px) {
-  .content-page {
+  .principal-msg-wrap,
+  .general-info-wrap,
+  .unit-member,
+  .info-block-row,
+  .member-sis-wrap,
+  .programs-sis-wrap,
+  .event-unit-wrap,
+  .unit-intro,
+  .unit-member,
+  .training-programs,
+  .event-unit-wrap,
+  .contact-wrap,
+  .wrap-intro,
+  .wrap-news,
+  .admission-wrap,
+  .wrap-event,
+  .co-partner-wrap,
+  .news-wrap,
+  .page-edu {
     width: 100% !important;
     margin: unset !important;
   }
