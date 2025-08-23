@@ -3589,3 +3589,13 @@ ul.sub-menu {
     margin: unset !important;
   }
 }
+
+.grid-box{
+  width: 47%;
+}
+
+@media (max-width: 1023px) {
+ .grid-box{
+  width: 23%;
+}
+}
