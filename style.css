@@ -3742,3 +3742,27 @@ ul.sub-menu {
   background-color: #dd8c00;
   margin-top: 12px;
 }
+
+#owl-carousel-event-none .owl-dots {
+  display: block;
+  text-align: center;
+  margin-top: 16px;
+}
+#owl-carousel-event-none .owl-dot {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: #9cbacc;
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  border: none;
+}
+
+#owl-carousel-event-none .owl-dot.active {
+  background-color: #ffab32;
+}
+
+.event-card-none{
+  min-height: 250px;
+}
