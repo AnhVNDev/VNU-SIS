@@ -3766,3 +3766,17 @@ ul.sub-menu {
 .event-card-none{
   min-height: 250px;
 }
+
+.quick-content-wrap{
+  position: relative;
+}
+
+.quick-content-img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1;
+  min-height: 500px;
+}
